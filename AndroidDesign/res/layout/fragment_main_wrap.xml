@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:drawable/divider_horizontal_dark"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+
+        <include
+            android:id="@+id/fragment_main_title_bar"
+            layout="@layout/fragment_main_title_bar"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/real_tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg_frame" />
+
+        <qlsl.androiddesign.view.baseview.WrapFragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </qlsl.androiddesign.view.baseview.WrapFragmentTabHost>
+    </LinearLayout>
+
+    <include layout="@layout/launcher_pull_door_view" />
+
+</FrameLayout>

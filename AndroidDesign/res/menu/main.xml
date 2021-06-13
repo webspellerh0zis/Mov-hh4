@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item0"
+        android:actionLayout="@layout/search_view"
+        android:icon="@drawable/menu_icon0"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/menu_item0"/>
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="@drawable/menu_icon1"
+        android:showAsAction="never"
+        android:title="@string/menu_item1"/>
+    <item
+        android:id="@+id/menu_item2"
+        android:icon="@drawable/menu_icon2"
+        android:showAsAction="never"
+        android:title="@string/menu_item2"/>
+    <item
+        android:id="@+id/menu_item3"
+        android:icon="@drawable/menu_icon3"
+        android:showAsAction="never"
+        android:title="@string/menu_item3"/>
+
+</menu>

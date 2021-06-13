@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="\n日志文件不存在或已删除!\n\n须将运行模式切换成调试模式,\n\n重新启动应用程序才可记录日志!" />
+
+</LinearLayout>

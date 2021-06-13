@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.api.maps.MapView
+        android:id="@id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="@dimen/dimen_small"
+        android:layout_marginRight="70dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起点  :  "
+                android:textColor="@color/cyan"
+                android:textSize="@dimen/dimen_textview_text_small" />
+
+            <TextView
+                android:id="@+id/tv_address_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在获取地址"
+                android:textColor="@color/cyan"
+                android:textSize="@dimen/dimen_textview_text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终点  :  "
+                android:textColor="@color/cyan"
+                android:textSize="@dimen/dimen_textview_text_small" />
+
+            <TextView
+                android:id="@+id/tv_address_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在获取地址"
+                android:textColor="@color/cyan"
+                android:textSize="@dimen/dimen_textview_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_msan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="模式"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <Button
+            android:id="@+id/btn_qpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="全屏"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <Button
+            android:id="@+id/btn_jjan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="街景"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <Button
+            android:id="@+id/btn_jpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="截屏"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <Button
+            android:id="@+id/btn_fxan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="分享"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="驾车"
+            android:textColor="@drawable/textcolor_navigation"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <Button
+            android:id="@+id/btn_bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="公交"
+            android:textColor="@drawable/textcolor_navigation"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <Button
+            android:id="@+id/btn_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="步行"
+            android:textColor="@drawable/textcolor_navigation"
+            android:textSize="@dimen/dimen_button_text" />
+        
+        <Button
+            android:id="@+id/btn_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_middle"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:padding="@dimen/dimen_middle"
+            android:text="分段"
+            android:textColor="@drawable/textcolor_navigation"
+            android:textSize="@dimen/dimen_button_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_marker_pre"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iv_marker_next"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</FrameLayout>

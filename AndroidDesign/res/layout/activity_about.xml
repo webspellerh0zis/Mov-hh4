@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen_small"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_middle"
+            android:src="@drawable/app_icon" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在获取版本信息"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+    <include layout="@layout/common_space_vertical" />
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_largest"
+        android:text="Dayeasy 得一科技\n\nCopyright © 2013-2015"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_textview_text" />
+
+</LinearLayout>

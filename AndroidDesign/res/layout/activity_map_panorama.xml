@@ -1,0 +1,141 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.amap.panorama.api.AMapPanoramaView
+        android:id="@+id/panoramaView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_middle"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.EditText
+            android:id="@id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_small"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="@dimen/dimen_middle"
+            android:text="故宫"
+            android:textColor="@color/text_color_edit_text"
+            android:textSize="@dimen/dimen_edittext_text" />
+
+        <Button
+            android:id="@id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_search"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dimen_largest"
+        android:layout_marginLeft="@dimen/dimen_small"
+        android:layout_marginRight="70dp"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="正在获取地址"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/dimen_textview_text_small" >
+
+        <requestFocus />
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <qlsl.androiddesign.view.commonview.VerticalSeekBar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/verticalSeekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dimen_large"
+                android:max="3136"
+                android:progress="1000"
+                android:progressDrawable="@drawable/list_seekbar_vertical"
+                android:secondaryProgress="3136"
+                android:thumb="@drawable/iv_map_bar" />
+
+            <TextView
+                android:id="@+id/tv_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/dimen_middle"
+                android:layout_marginTop="@dimen/dimen_middle"
+                android:text="1000m"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dimen_textview_text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_qpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_middle"
+                android:layout_marginRight="@dimen/dimen_middle"
+                android:background="@color/button_default"
+                android:onClick="onClick"
+                android:padding="@dimen/dimen_middle"
+                android:text="全屏"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/dimen_button_text" />
+
+            <Button
+                android:id="@+id/btn_jpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_middle"
+                android:layout_marginRight="@dimen/dimen_middle"
+                android:background="@color/button_default"
+                android:contentDescription="截屏"
+                android:onClick="onClick"
+                android:padding="@dimen/dimen_middle"
+                android:text="截屏"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/dimen_button_text" />
+
+            <Button
+                android:id="@+id/btn_fxan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_middle"
+                android:layout_marginRight="@dimen/dimen_middle"
+                android:background="@color/button_default"
+                android:onClick="onClick"
+                android:padding="@dimen/dimen_middle"
+                android:text="分享"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/dimen_button_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

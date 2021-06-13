@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@+id/spaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_common_content_view"
+        android:padding="@dimen/dimen_small_middle"
+        android:singleLine="true"
+        android:text="圈主"
+        android:textColor="@color/text_color_list_item_small"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_middle" >
+
+        <ImageView
+            android:id="@id/iv_icon"
+            android:layout_width="@dimen/dimen_80_dip"
+            android:layout_height="@dimen/dimen_80_dip"
+            android:layout_marginRight="@dimen/dimen_middle"
+            android:src="@drawable/avatar_default" />
+
+        <qlsl.androiddesign.view.commonview.ArtTextView
+            android:id="@+id/tv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_middle"
+            android:background="@color/blue"
+            android:paddingBottom="@dimen/dimen_smaller"
+            android:paddingLeft="@dimen/dimen_small"
+            android:paddingRight="@dimen/dimen_small"
+            android:paddingTop="@dimen/dimen_smaller"
+            android:singleLine="true"
+            android:text="科目"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <qlsl.androiddesign.view.commonview.ArtTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="名字"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_middle" />
+    </LinearLayout>
+
+</LinearLayout>

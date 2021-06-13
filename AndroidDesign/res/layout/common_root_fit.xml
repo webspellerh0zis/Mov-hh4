@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 所有Activity及Fragment的根布局[适应沉浸式，非沉浸式标题栏及屏幕内虚拟按键栏] -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/common_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_common_title_view"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:id="@id/viewgroup_common_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_common_content_view"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_title" />
+    </LinearLayout>
+
+    <include layout="@layout/common_progressbar" />
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_camera_vc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dark_selector"
+    android:clickable="true"
+    android:drawablePadding="0dp"
+    android:drawableTop="@drawable/btn_camera_selector"
+    android:gravity="center"
+    android:text="@string/taking_pictures"
+    android:onClick="onClick"
+    android:textColor="@android:color/white" /> -->
+
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_camera_vc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="center"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dark_selector"
+    android:src="@drawable/btn_camera_selector"
+    android:onClick="onClick" />

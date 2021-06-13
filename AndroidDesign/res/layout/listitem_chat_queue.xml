@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@id/back_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1px"
+        android:layout_marginTop="1px"
+        android:background="@color/swipe_delete"
+        android:gravity="center_vertical|right" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/trash"
+            android:drawablePadding="@dimen/dimen_smallest"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/dimen_small"
+            android:paddingLeft="@dimen/dimen_large"
+            android:paddingRight="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_small"
+            android:text="删除"
+            android:textColor="@color/list_item_release"
+            android:textSize="@dimen/dimen_textview_text_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/front_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_item_release"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_small" >
+
+        <ImageView
+            android:id="@id/iv_icon"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avatar_default" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_smallest"
+            android:layout_marginLeft="@dimen/dimen_middle"
+            android:layout_marginRight="@dimen/dimen_middle"
+            android:layout_marginTop="@dimen/dimen_smallest"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="正在获取名称"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="正在获取内容"
+                android:textColor="@color/text_color_list_item_small"
+                android:textSize="@dimen/dimen_textview_text_small" />
+        </LinearLayout>
+
+        <qlsl.androiddesign.view.commonview.ArtTextView
+            android:id="@id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginLeft="@dimen/dimen_largest"
+            android:layout_marginTop="@dimen/dimen_smallest"
+            android:singleLine="true"
+            android:text="正在获取时间"
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small" />
+    </LinearLayout>
+
+</FrameLayout>

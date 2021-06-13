@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item"
+    android:gravity="center_vertical"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_large" >
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/text_color_list_item_small"
+        android:textSize="@dimen/dimen_textview_text_small" />
+
+    <qlsl.androiddesign.view.commonview.EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="不详"
+        android:singleLine="true"
+        android:textColor="@color/text_color_list_item_small"
+        android:textSize="@dimen/dimen_textview_text_small" />
+
+</LinearLayout>

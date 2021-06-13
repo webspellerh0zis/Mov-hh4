@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_small"
+    android:paddingRight="@dimen/dimen_small" >
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ems="4"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textColor="@color/text_color_list_item"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_small"
+        android:layout_marginRight="@dimen/dimen_small"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/text_color_list_item"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:onClick="onClick"
+        android:src="@drawable/btn_common" />
+
+</LinearLayout>

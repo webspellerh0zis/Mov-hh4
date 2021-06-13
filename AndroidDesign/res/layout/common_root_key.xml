@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 所有Activity及Fragment的根布局,虚拟按键在内部 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/common_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/viewgroup_common_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_content_view"
+            android:orientation="vertical" >
+
+            <include layout="@layout/common_title" />
+        </LinearLayout>
+
+        <!-- 屏幕内部虚拟按键栏 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:background="@drawable/common_content_view" />
+    </LinearLayout>
+
+    <include layout="@layout/common_progressbar" />
+
+</FrameLayout>

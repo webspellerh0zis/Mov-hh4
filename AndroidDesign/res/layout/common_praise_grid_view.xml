@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dimen_small"
+    android:layout_marginLeft="@dimen/dimen_middle"
+    android:layout_marginRight="@dimen/dimen_middle"
+    android:orientation="horizontal" >
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:id="@+id/tv_praise_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dimen_small"
+        android:drawableLeft="@drawable/btn_praise"
+        android:drawablePadding="@dimen/dimen_smaller" />
+
+    <qlsl.androiddesign.view.commonview.WrapGridView
+        android:id="@+id/gridView_praise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="@dimen/dimen_60_dip"
+        android:horizontalSpacing="@dimen/dimen_small"
+        android:numColumns="8"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dimen_small" />
+
+</LinearLayout>

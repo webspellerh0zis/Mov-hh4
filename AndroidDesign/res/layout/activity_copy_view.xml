@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_color_text_default"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <ImageView
+        android:id="@id/iv_icon" 
+        android:layout_width="@dimen/dimen_96_dip"
+        android:layout_height="@dimen/dimen_96_dip" />
+    
+    <ImageView
+        android:id="@id/iv_icon"
+        android:layout_width="@dimen/dimen_80_dip"
+        android:layout_height="@dimen/dimen_80_dip" />
+
+    <qlsl.androiddesign.view.commonview.Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_default"
+        android:text="取消"
+        android:textColor="@color/text_color_button"
+        android:textSize="@dimen/dimen_button_text" />
+
+    <qlsl.androiddesign.view.commonview.EditText
+        android:id="@id/reply_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_72_dip"
+        android:layout_marginLeft="@dimen/dimen_small"
+        android:layout_marginRight="@dimen/dimen_small"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入"
+        android:paddingLeft="@dimen/dimen_middle"
+        android:paddingRight="@dimen/dimen_small_middle"
+        android:singleLine="true"
+        android:textColor="@color/text_color_edit_text"
+        android:textColorHint="@color/text_color_edit_hint"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_large"
+        android:layout_marginRight="@dimen/dimen_large"
+        android:background="#FFFFFF"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_middle"
+        android:paddingRight="@dimen/dimen_middle" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_small" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <ToggleButton
+            android:id="@+id/tbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tbtn"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/devider_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.01pt"
+        android:layout_marginLeft="@dimen/dimen_large"
+        android:layout_marginRight="@dimen/dimen_large"
+        android:background="@color/devider" />
+
+</LinearLayout>

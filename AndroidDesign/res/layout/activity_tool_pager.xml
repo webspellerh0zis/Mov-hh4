@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_middle"
+        android:layout_marginTop="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启分页加载"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <ToggleButton
+            android:id="@+id/tbtn"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tbtn"
+            android:checked="true"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <include layout="@layout/common_space_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:gravity="center_horizontal"
+            android:text="单页数据"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <SeekBar
+            android:id="@+id/sb_pager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="35"
+            android:progressDrawable="@drawable/color_seekbar_green" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="center_horizontal"
+            android:text="15"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:gravity="center_horizontal"
+            android:text="请求总量"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <SeekBar
+            android:id="@+id/sb_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="900"
+            android:progressDrawable="@drawable/color_seekbar_blue" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="center_horizontal"
+            android:text="100"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+</LinearLayout>

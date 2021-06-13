@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_36_dip" >
+
+    <include layout="@layout/common_search_view_cancel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_89_dip"
+        android:background="@color/light_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@id/spinnerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:dropDownVerticalOffset="0dp"
+            android:dropDownWidth="wrap_content"
+            android:gravity="center_vertical|left"
+            android:popupBackground="@null"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_smallest"
+            android:src="@drawable/iv_arrow_down" />
+    </LinearLayout>
+
+    <include layout="@layout/common_refresh_list_view" />
+
+</LinearLayout>

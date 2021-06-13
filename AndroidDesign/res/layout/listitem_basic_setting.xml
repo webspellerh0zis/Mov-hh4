@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_small" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dimen_small" />
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_list_item"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <include layout="@layout/common_space_horizontal" />
+
+    <ToggleButton
+        android:id="@+id/tbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        android:textOff="@string/text_off"
+        android:textOn="@string/text_on"
+        android:textSize="@dimen/dimen_textview_text_smallest" />
+
+</LinearLayout>

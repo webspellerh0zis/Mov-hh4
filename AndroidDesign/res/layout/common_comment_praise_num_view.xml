@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/commentPraiseNumView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="30dp"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/common_space_horizontal" />
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/btn_comment"
+        android:drawablePadding="@dimen/dimen_small"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/text_color_text1"
+        android:textSize="@dimen/dimen_textview_text_smallest" />
+
+    <include layout="@layout/common_space_horizontal" />
+
+    <include layout="@layout/common_devider_vertical" />
+
+    <include layout="@layout/common_space_horizontal" />
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@id/tv_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/btn_praise"
+        android:drawablePadding="@dimen/dimen_small"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/text_color_text1"
+        android:textSize="@dimen/dimen_textview_text_smallest" />
+
+    <include layout="@layout/common_space_horizontal" />
+
+</LinearLayout>

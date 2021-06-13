@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/searchView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_middle"
+    android:layout_marginLeft="@dimen/dimen_middle"
+    android:layout_marginRight="@dimen/dimen_middle"
+    android:layout_marginTop="@dimen/dimen_middle"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <qlsl.androiddesign.view.commonview.EditText
+        android:id="@id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_small"
+        android:layout_weight="1"
+        android:background="@drawable/bg_round_edittext4"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:hint="请输入"
+        android:paddingLeft="@dimen/dimen_middle"
+        android:paddingRight="@dimen/dimen_small_middle"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+    <qlsl.androiddesign.view.commonview.Button
+        android:id="@id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_search_cancel"
+        android:onClick="onClick"
+        android:paddingBottom="@dimen/dimen_small"
+        android:paddingLeft="@dimen/dimen_middle"
+        android:paddingRight="@dimen/dimen_middle"
+        android:paddingTop="@dimen/dimen_small"
+        android:text="取消"
+        android:textColor="@drawable/textcolor_search_cancel"
+        android:textSize="@dimen/dimen_button_text" />
+
+</LinearLayout>

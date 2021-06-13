@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 所有Fragment的沉浸式根布局 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/common_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@id/viewgroup_common_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_common_content_view"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_title_immersion" />
+    </LinearLayout>
+
+    <include layout="@layout/common_progressbar" />
+
+</FrameLayout>

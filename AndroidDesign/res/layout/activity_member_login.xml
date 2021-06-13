@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_75_dip"
+    android:paddingRight="@dimen/dimen_75_dip" >
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="智慧教育，从心出发"
+        android:textColor="@color/text_color_text_view"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <qlsl.androiddesign.view.commonview.ClearEditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_60_dip"
+            android:background="@drawable/bg_edittext"
+            android:drawableLeft="@drawable/icon_username"
+            android:drawablePadding="@dimen/dimen_middle"
+            android:drawableRight="@drawable/iv_clear"
+            android:hint="email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingBottom="@dimen/dimen_larger"
+            android:paddingLeft="@dimen/dimen_large"
+            android:paddingRight="@dimen/dimen_small_middle"
+            android:paddingTop="@dimen/dimen_larger"
+            android:singleLine="true"
+            android:text="s007@qq.com"
+            android:textColor="@color/text_color_edit_text"
+            android:textColorHint="@color/text_color_edit_hint"
+            android:textSize="@dimen/dimen_edittext_text" />
+
+        <qlsl.androiddesign.view.commonview.ClearEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_60_dip"
+            android:background="@drawable/bg_edittext"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/dimen_middle"
+            android:drawableRight="@drawable/iv_clear"
+            android:hint="password"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingBottom="@dimen/dimen_larger"
+            android:paddingLeft="@dimen/dimen_large"
+            android:paddingRight="@dimen/dimen_small_middle"
+            android:paddingTop="@dimen/dimen_larger"
+            android:password="true"
+            android:singleLine="true"
+            android:text="123456"
+            android:textColor="@color/text_color_edit_text"
+            android:textColorHint="@color/text_color_edit_hint"
+            android:textSize="@dimen/dimen_edittext_text" />
+
+        <qlsl.androiddesign.view.commonview.Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_default"
+            android:onClick="onClick"
+            android:text="登   录"
+            android:textColor="@color/text_color_button"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_largest"
+            android:layout_marginTop="@dimen/dimen_largest"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@id/devider_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.01pt"
+                android:layout_weight="1"
+                android:background="@color/devider" />
+
+            <qlsl.androiddesign.view.commonview.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只需一步，快速开始"
+                android:textColor="@color/text_color_text_view"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <View
+                android:id="@id/devider_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.01pt"
+                android:layout_weight="1"
+                android:background="@color/devider" />
+        </LinearLayout>
+
+        <include layout="@layout/common_grid_view_small" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_largest"
+            android:singleLine="true"
+            android:text="@string/company"
+            android:textColor="@color/text_color_text_view"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_smallest"
+            android:singleLine="true"
+            android:textColor="@color/text_color_text_view"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+</LinearLayout>

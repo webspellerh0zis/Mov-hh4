@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@id/tagView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.ArtTextView
+            android:id="@id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_middle"
+            android:background="@drawable/bg_round_textview"
+            android:maxLength="7"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:text="空标签"
+            android:textColor="@color/text_color_text1"
+            android:textSize="@dimen/dimen_textview_text_small"
+            android:visibility="gone" />
+
+        <qlsl.androiddesign.view.commonview.ArtTextView
+            android:id="@id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_middle"
+            android:background="@drawable/bg_round_textview"
+            android:maxLength="7"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:text="空标签"
+            android:textColor="@color/text_color_text1"
+            android:textSize="@dimen/dimen_textview_text_small"
+            android:visibility="gone" />
+
+        <qlsl.androiddesign.view.commonview.ArtTextView
+            android:id="@id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_middle"
+            android:background="@drawable/bg_round_textview"
+            android:maxLength="7"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:text="空标签"
+            android:textColor="@color/text_color_text1"
+            android:textSize="@dimen/dimen_textview_text_small"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</HorizontalScrollView>

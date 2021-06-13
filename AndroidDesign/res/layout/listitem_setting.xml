@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@drawable/list_item"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <qlsl.androiddesign.view.commonview.WidgetArtTextView
+        android:id="@+id/tv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_list_item"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <include layout="@layout/common_space_horizontal" />
+
+    <ImageButton
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/list_item_icon"
+        android:duplicateParentState="true"
+        android:focusableInTouchMode="true" />
+
+</LinearLayout>

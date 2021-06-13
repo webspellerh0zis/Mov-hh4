@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 沉浸式标题栏全屏时的填充空间 ,较大边距 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/viewgroup_common_title_immersion_fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_60_dip"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+</LinearLayout>

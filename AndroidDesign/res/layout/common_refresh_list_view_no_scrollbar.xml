@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/emptyParentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <qlsl.androiddesign.library.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/refreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_small"
+        android:cacheColorHint="@color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="false"
+        ptr:ptrMode="both"
+        ptr:ptrOverScroll="false"
+        ptr:ptrShowIndicator="false" />
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:id="@id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="@string/no_data"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/dimen_textview_text" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/searchView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_small" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <qlsl.androiddesign.view.commonview.EditText
+        android:id="@id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dimen_middle"
+        android:hint="搜索"
+        android:paddingLeft="@dimen/dimen_small"
+        android:paddingRight="@dimen/dimen_small_middle"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+</LinearLayout>

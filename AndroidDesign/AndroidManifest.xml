@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qlsl.androiddesign.appname"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+
+    <!-- 照相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 方向权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 存储卡读权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 存储卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许程序打开窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序更改主屏幕中的设置和快捷方式 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许程序访问精良位置(如GPS) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序修改有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序访问有关WIFI网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序修改有关WIFI网络信息 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许程序读取底层系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 允许一个程序初始化一个电话拨号不需通过拨号 ，用户界面需要用户确认 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 设置调试程序，一般用于开发 -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <!-- 访问GMail账户列表 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许程序请求验证从AccountManager -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 允许程序管理AccountManager中的账户列表 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 杀掉后台进程权限 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name="qlsl.androiddesign.application.SoftwareApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_default"
+        android:label="@string/app_name"
+        android:logo="@drawable/app_icon_default"
+        android:theme="@style/AppTheme" >
+
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56777fa7e0f55ab5140016f0" />
+
+        <!-- 框架内activity,service,receiver -->
+
+
+        <!-- activity -->
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.LauncherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="qlsl.androiddesign.activity.baseactivity.BaseSherlockFragmentActivity" />
+        <activity android:name="qlsl.androiddesign.activity.baseactivity.BaseSherlockPreferenceActivity" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.subactivity.TestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.InstanceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ActionSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.BasicSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.LogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.SendManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.LogSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ProcessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ProcessDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ExampleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.VersionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.PhotoBrowseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.subactivity.JtznActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.subactivity.LongBusSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.subactivity.TrainSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.subactivity.BusSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.subactivity.FlightSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemberLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemberRegistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemberResetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemberForgetPasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemberInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.MemberSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ToolSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ToolColorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ToolSpeechActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.ToolPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.photoselector.ui.PhotoPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.photoselector.ui.PhotoSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.OcrMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.OcrCornerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.OcrDeskewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.OcrCameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.CommentReplyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.EditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.WebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="qlsl.androiddesign.activity.commonactivity.JsonFormatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- service -->
+        <service android:name="qlsl.androiddesign.service.subservice.LogFloatService" />
+        <service android:name="qlsl.androiddesign.service.subservice.MediaFloatService" />
+
+        <!-- receiver -->
+
+
+        <!-- 框架外activity,service,receiver -->
+
+
+        <!-- 友盟分享START -->
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- 请填写QQ互联APPID(开放平台：1104958955  此值错误不造成影响) -->
+                <data android:scheme="tencent1104958955" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.qlsl.androiddesign.appname.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信回调activity -->
+        <activity
+            android:name="com.qlsl.androiddesign.appname.yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 人人SSO授权所需的OAuthActivity -->
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden" />
+
+        <!-- 友盟分享END -->
+
+
+        <!-- activity -->
+
+
+        <!-- service -->
+
+
+        <!-- receiver -->
+
+    </application>
+
+</manifest>

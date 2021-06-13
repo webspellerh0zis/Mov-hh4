@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_map_periodic"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_small"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_middle" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_middle"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <TextView
+                android:id="@id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/text_color_distance"
+                android:textSize="@dimen/dimen_textview_text_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_small"
+            android:layout_marginTop="@dimen/dimen_small"
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/common_space_horizontal" />
+
+            <TextView
+                android:id="@id/tv_descript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/iv_marker_detail"
+                android:drawablePadding="@dimen/dimen_small"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="看详情"
+                android:textColor="@color/text_color_list_item_small"
+                android:textSize="@dimen/dimen_textview_text_small" />
+
+            <include layout="@layout/common_space_horizontal" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <include layout="@layout/common_space_horizontal" />
+
+            <TextView
+                android:id="@id/tv_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/iv_marker_navigation"
+                android:drawablePadding="@dimen/dimen_small"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="到这边"
+                android:textColor="@color/text_color_list_item_small"
+                android:textSize="@dimen/dimen_textview_text_small" />
+
+            <include layout="@layout/common_space_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

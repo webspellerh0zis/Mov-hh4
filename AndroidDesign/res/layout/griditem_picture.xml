@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/grid_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:clickable="true" >
+
+    <FrameLayout
+        android:layout_width="@dimen/dimen_172_dip"
+        android:layout_height="@dimen/dimen_210_dip"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_grid_item"
+            android:layout_width="@dimen/dimen_168_dip"
+            android:layout_height="@dimen/dimen_192_dip"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:padding="2dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/dimen_36_dip"
+            android:layout_height="@dimen/dimen_36_dip"
+            android:layout_gravity="right|top"
+            android:paddingRight="@dimen/dimen_smaller"
+            android:background="@drawable/bg_circle_red"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_delete_imgs" />
+    </FrameLayout>
+
+</FrameLayout>

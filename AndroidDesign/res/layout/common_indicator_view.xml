@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     <qlsl.androiddesign.view.indicatorview.IndicatorView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/net_indicate_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/iv_default_indicator"/>
+-->
+
+
+<!-- 后台图片高度不统一，暂时定死 -->
+<qlsl.androiddesign.view.indicatorview.IndicatorView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/net_indicate_view"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="200dp" />
+

@@ -1,0 +1,161 @@
+#申请过的帐号，密码均在此说明，只作说明，不作读写
+
+得一网站：
+测试网站：http://passport.deyi.com
+测试新网站：www.deyi.com
+线上旧网站：https://passport.dayeasy.net
+线上新网站：https://www.dayeasy.net
+测试API文档：http://open.v3.deyi.com/
+线上API文档：http://open.dayeasy.net/
+禅道：http://www.dayez.net:88
+
+聚合数据(交通指南)：
+网站：http://www.juhe.cn/coins/bank
+帐号：******
+密码：******
+
+高德地图：（暂为私人帐号，公司帐号申请后替换掉，并替换清单相关配置）
+网站：http://lbs.amap.com
+帐号：******
+密码：******
+
+灵云识别:
+网站:http://www.hcicloud.com
+账号:qlsl_ylq@sina.com
+密码:dayeasy_password
+
+Camera360:
+网站:http://sdk.camera360.com
+账号:qlsl_ylq@sina.com
+密码:dayeasy_password
+
+友盟：
+网站：http://www.umeng.com
+账号：tongji@dayeasy.net 
+密码：deyi168
+
+Jar说明：
+名称：juhe_sdk_v_2_5.jar 
+作用： 聚合jar包  ，使用Jar包内置网络连接及回调+openId配置+免去传递key参数可大大增加某些接口的限制访问次数；不使用则次数极少
+版本：2.5
+说明：需添加libJuheSDK_v_1_1.so文件
+
+名称：android_volley_manager_1.04.jar
+作用：异步图片加载
+版本：1.04
+说明：暂无说明
+
+名称：glide-3.5.2.jar
+作用： 异步图片加载jar包  ，Glide支持获取、解码和显示视频文件、图片和动画GIF文件，自动离线缓存
+版本：3.5.2
+说明：2014年由谷歌在泰国举行的谷歌开发者论坛上介绍，作者bumptech
+
+名称：picasso-2.5.2.jar
+作用： 异步图片加载jar包  ，picasso比Glide速度更快，时间更早，但支持少
+版本：2.5.2
+说明：暂无说明
+
+名称：umeng_social_sdk.jar，SocialSDK_Sina.jar等
+作用： 友盟分享
+版本：4.2.3
+说明：暂无说明
+
+名称：Android_Location_V1.3.1.jar
+作用： 高德定位
+版本：1.3.1(新版，1.3.0以下为旧版)
+说明：暂无说明
+
+名称：AMap_3DMap_V2.4.1.jar，libamapv304.so，libamapv304ex.so
+作用： 高德地图
+版本：2.4.1(新版，2.3.0以下为旧版)
+说明：暂无说明
+
+名称：AMapPanoramaSDK1.0.jar，libpanoramaAmapV1.0.so
+作用： 高德街景
+版本：1.0(新版，1.0以下为旧版)
+说明：暂无说明
+
+名称：AMap_Services_V2.4.0.jar
+作用： 高德搜索
+版本：2.4.0
+说明：须配合Android SDK 3D地图包 V2.2.1及以上版本
+
+名称：android-logging-log4j-1.0.3.jar
+作用： 程序日志管理
+版本：1.0.3
+说明：暂无说明
+
+名称：mail.jar,mail-activation.jar,mail-additionnal.jar
+作用： 邮箱后台发送
+版本：未知
+说明：暂无说明
+
+名称：ormlite-core,ormlite-android
+作用： 对象关系映射（ORM）提供了概念性的、易于理解的模型化数据的方法。ORM方法论基于三个核心原则： 简单：以最基本的形式建模数据。 传达性：数据库结构被任何人都能理解的语言文档化。 精确性：基于数据模型创建正确标准化了的结构
+版本：4.49
+说明：暂无说明
+
+名称：fastjson-1.1.28.jar
+作用： 阿里巴巴json解析
+版本：1.1.28
+说明：暂无说明
+
+名称：afinal_0.5.1_bin.jar
+作用： 
+版本：0.5.1
+说明：暂无说明
+
+名称：Android_Services_2.2.0.jar
+作用： 
+版本：2.2.0
+说明：暂无说明
+
+名称：httpmime-4.1.3.jar
+作用： 友盟中第三方登陆及分享时的网络支持包
+版本：4.1.3
+说明：暂无说明
+
+名称：commons-httpclient-3.1.jar，core.jar，httpcore-4.2.4.jar，mina-core-2.0.7.jar
+作用： 
+版本：
+说明：暂无说明
+
+名称：PanoramaGL.jar，libglues.so
+作用： 全景
+版本：未知
+说明：暂无说明
+
+名称：BmobSDK_V3.4.0_0616.jar
+作用： 移动后端云服务平台
+版本：3.4.0
+说明：Bmob可以开发一个云存储的移动应用软件，给应用软件快速添加一个安全灵活的后台管理系统，方便浏览终端保存的各种信息。
+
+名称：Msc.jar,libmsc.so
+作用：讯飞语音
+版本：未知(20150722)
+说明：暂无说明
+
+名称：libopencv_....so
+作用：视觉处理
+版本: 3.0.0
+说明：图像处理
+
+名称：chunk-templates-3.0.1.jar，assets/katex,assets/MathJax,assets/themes
+作用：数理公式解析引擎
+版本: 3.0.1
+说明：本地MathJax或Katex解析
+
+名称：pinyin4j-2.5.0.jar
+作用：拼音工具
+版本: 2.5.0
+说明：获取字符串的拼音以进行排序
+
+
+
+
+
+
+
+
+
+

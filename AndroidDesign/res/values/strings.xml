@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 移植的String -->
+    <string name="company">**网络科技有限公司</string>
+    <string name="toast_tag">编辑标签：<font color="red">（必填）</font></string>
+
+    <!-- 常用 -->
+    <string name="no_data">暂无数据</string>
+    <string name="password_digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="color_digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ#</string>
+    <string name="sms_verify_code">0123456789</string>
+
+    <!-- 公交默认排序值 -->
+    <string name="bus_sort_default">综合排序</string>
+
+    <!-- APP相关 -->
+    <string name="app_name">AndroidDesign</string>
+    <string name="menu_item0">搜索</string>
+    <string name="menu_item1">设置</string>
+    <string name="menu_item2">主题</string>
+    <string name="menu_item3">背景</string>
+    <string name="search_hint">全民热搜：平行宇宙</string>
+    <string name="query_hint">全民热搜：平行宇宙</string>
+    <string name="search_label">搜索</string>
+    <string name="text_on"><font color="green">已开启</font></string>
+    <string name="text_off"><font color="white">已关闭</font></string>
+
+    <!-- Log设置SP文件各项键名,值为boolean类型 -->
+    <string name="debugModel">debugModel</string>
+    <string name="outputPhoneModel">outputPhoneModel</string>
+
+    <!-- 基本设置SP文件各项键名,值为boolean类型 -->
+    <string name="showLeftMenu">showLeftMenu</string>
+    <string name="showRightMenu">showRightMenu</string>
+    <string name="showTabTop">showTabTop</string>
+    <string name="showTabBottom">showTabBottom</string>
+    <string name="showNoticeBar">showNoticeBar</string>
+    <string name="showActionBar">showActionBar</string>
+    <string name="screenOrientation">screenOrientation</string>
+
+    <!-- 系统设置SP文件各项键名,值为boolean类型 -->
+    <string name="key_znsdms">key_znsdms</string>
+    <string name="key_rjgxts">key_rjgxts</string>
+    <string name="key_zdyybb">key_zdyybb</string>
+    <string name="key_zddwcs">key_zddwcs</string>
+
+    <!-- 地图基本设置SP文件各项键名,值为boolean类型 -->
+    <!-- 模式按钮 -->
+    <string name="key_msan">key_msan</string>
+    <!-- 定位按钮 -->
+    <string name="key_dwan">key_dwan</string>
+    <!-- 缩放按钮 -->
+    <string name="key_sfan">key_sfan</string>
+    <!-- 全屏按钮 -->
+    <string name="key_qpan">key_qpan</string>
+    <!-- 街景按钮 -->
+    <string name="key_jjan">key_jjan</string>
+    <!-- 截屏按钮 -->
+    <string name="key_jpan">key_jpan</string>
+    <!-- 分享按钮 -->
+    <string name="key_fxan">key_fxan</string>
+    <!-- 比例尺 -->
+    <string name="key_blc">key_blc</string>
+    <!-- 指南针 -->
+    <string name="key_znz">key_znz</string>
+
+    <!-- 地图街景设置SP文件各项键名,值为boolean类型 -->
+    <string name="key_panorama_seekbar">key_panorama_seekbar</string>
+    <string name="key_panorama_qpan">key_panorama_qpan</string>
+    <string name="key_panorama_jpan">key_panorama_jpan</string>
+    <string name="key_panorama_fxan">key_panorama_fxan</string>
+    <string name="key_panorama_address">key_panorama_address</string>
+
+    <!-- 地图导航设置SP文件各项键名,值为boolean类型 -->
+    <string name="key_navigation_msan">key_navigation_msan</string>
+    <string name="key_navigation_sfan">key_navigation_sfan</string>
+    <string name="key_navigation_qpan">key_navigation_qpan</string>
+    <string name="key_navigation_jjan">key_navigation_jjan</string>
+    <string name="key_navigation_jpan">key_navigation_jpan</string>
+    <string name="key_navigation_fxan">key_navigation_fxan</string>
+    <string name="key_navigation_llan">key_navigation_llan</string>
+    <string name="key_navigation_fdan">key_navigation_fdan</string>
+    <string name="key_navigation_dhdz">key_navigation_dhdz</string>
+    <string name="key_navigation_blc">key_navigation_blc</string>
+    <string name="key_navigation_znz">key_navigation_znz</string>
+
+    <!-- 顶端选项卡 -->
+    <string name="bar1">bar1</string>
+    <string name="bar2">bar2</string>
+    <string name="bar3">bar3</string>
+    <!-- 底端选项卡 -->
+    <string name="tab1">TAB1</string>
+    <string name="tab2">TAB2</string>
+    <string name="tab3">TAB3</string>
+    <string name="tab4">TAB4</string>
+    <string name="tab5">TAB5</string>
+
+    <!-- TimePicker相关 -->
+    <string name="cancel">取消</string>
+    <string name="pwSubmit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hours">时</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+
+    <!-- 空格相关,空两格 -->
+    <string name="space">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <!-- 空格相关,空一格 -->
+    <string name="single">&#160;&#160;&#160;&#160;</string>
+
+    <!-- 友盟相关 -->
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="umeng_socialize_network_break_alert" translatable="false">请连接网络后再尝试！</string>
+    <string name="umeng_socialize_comment" translatable="false">评论</string>
+    <string name="umeng_socialize_comment_detail" translatable="false">评论详情</string>
+    <string name="umeng_socialize_back" translatable="false">返回</string>
+    <string name="umeng_socialize_near_At" translatable="false">最近\@的好友</string>
+    <string name="umeng_socialize_friends" translatable="false">关注的好友</string>
+    <string name="umeng_socialize_send" translatable="false">发布</string>
+    <string name="umeng_socialize_tip_blacklist" translatable="false">对不起，因为违反了用户协议您已被禁言.</string>
+    <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败&#8230;</string>
+    <string name="umeng_socialize_msg_sec" translatable="false">秒前</string>
+    <string name="umeng_socialize_msg_min" translatable="false">分钟前</string>
+    <string name="umeng_socialize_msg_hor" translatable="false">小时前</string>
+    <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
+    <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
+
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+
+    <string name="umeng_socialize_share_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能，我们简化了社交平台的接入，为开发者提供坚实的基础服务。（一）支持各大主流社交平台， 
+												（二）支持图片、文字、gif动图、音频、视频；@好友，关注官方微博等功能。
+												（三）提供详尽的后台用户社交行为分析。www.umeng.com/social</string>
+    <string name="umeng_socialize_login_qq">QQ空间</string>
+    <string name="umeng_socialize_login">登录</string>
+    <string name="umeng_socialize_text_choose_account">选择已有帐号登录</string>
+    <string name="umeng_socialize_text_authorize">授权</string>
+    <string name="umeng_socialize_text_unauthorize">未授权</string>
+    <string name="umeng_socialize_text_ucenter">个人中心</string>
+    <string name="umeng_socialize_text_login_fail">登录失败了，请重试</string>
+    <string name="umeng_socialize_text_comment_hint">说点什么吧&#8230;</string>
+    <string name="umeng_socialize_text_friend_list">好友列表</string>
+    <string name="umeng_socialize_text_visitor">游客</string>
+    <string name="umeng_socialize_text_tencent_no_connection">无法连接到腾讯微博客户端</string>
+    <string name="umeng_socialize_text_tencent_oauth_login_fail">授权登录失败</string>
+    <string name="umeng_socialize_text_tencent_version_no_match">版本不匹配，SSO只对微博客户端V3.8.1及以上的版本提供支持</string>
+    <string name="umeng_socialize_text_tencent_no_install">未安装腾讯微博客户端</string>
+    <string name="umeng_socialize_text_waitting">请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin_circle">跳转朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin">跳转易信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin_circle">跳转易信朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qzone">跳转QZone中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_redirect">跳转</string>
+    <string name="umeng_socialize_text_waitting_message">,请稍候...</string>
+    <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
+    <!-- 平台名称 -->
+    <string name="umeng_socialize_text_tencent_key">腾讯微博</string>
+    <string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="umeng_socialize_text_renren_key">人人网</string>
+    <string name="umeng_socialize_text_douban_key">豆瓣网</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+    <string name="umeng_socialize_text_add_custom_platform">请配置用户平台</string>
+    <string name="umeng_example_home_btn_plus">社交分享</string>
+    <string name="umeng_socialize_text_waitting_share">分享中&#8230;</string>
+    <string name="umeng_socialize_content_hint">说点啥&#8230;</string>
+    <string name="umeng_socialize_cancel_btn_str">取消</string>
+    <string name="umeng_socialize_send_btn_str">发送</string>
+    <string name="umeng_socialize_img_des"></string>
+    <string name="umeng_socialize_share">分享</string>
+    <string name="com_facebook_loading">Loading...</string>
+
+    <!-- ProgressBar -->
+    <string name="progressbar_text">正在载入…</string>
+
+    <!-- pull to refresh中的下拉刷新，上拉加载 -->
+    <string name="pull_to_refresh_btt_pull_label">上拉加载…</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+    <!-- 分界线 -->
+    <string name="properties">SlidingMenu Properties</string>
+    <string name="general">General</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="attach">Attach</string>
+    <string name="title_bar">Title Bar Options</string>
+    <string name="title_bar_slide">Sliding Title Bar</string>
+    <string name="title_bar_content">Sliding Content Only</string>
+    <string name="animations">Custom Animations</string>
+    <string name="anim_zoom">Zoom</string>
+    <string name="anim_scale">Scale</string>
+    <string name="anim_fold">Fold</string>
+    <string name="anim_slide">Slide Up</string>
+    <string name="changing_fragments">Changing Fragments</string>
+    <string name="responsive_ui">Responsive UI</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="left_and_right">Left and Right</string>
+    <string name="github">GitHub</string>
+    <string name="github_label">SlidingMenu on GitHub</string>
+    <string name="what_is_this">What is this?</string>
+    <string name="responsive_explanation">This is an example of a UI that responds well to device type. On phones, the menu will be placed inside a SlidingMenu, while on tablets the menu will be exposed alongside the content because we have enough room to always show it.</string>
+    <string name="about">About</string>
+    <string name="licenses">Licenses</string>
+    <string name="contact">Contact</string>
+    <string name="about_msg">&lt;b>SlidingMenu&lt;/b> is an Open Source Android library 
+        that allows developers to easily create applications with sliding menus like those 
+        made popular in the Google+, YouTube, and Facebook applications. 
+        You can find it on GitHub by clicking the little octocat icon in the ActionBar. 
+        Feel free to use it all you want in your Android apps provided 
+        that you cite this project and include the license in your app.
+        &lt;br>&lt;br>
+		SlidingMenu is currently used in some incredibly popular Android 
+		apps such as Zappos, Plume, VLC for Android, and The Verge. 
+		If you are using SlidingMenu in your app and would like to be 
+		listed here, please let me know via Twitter (@slidingmenu)!</string>
+    <string name="apache_license">&lt;b>SlidingMenu &lt;/b>&lt;br>
+        \u00A9 2012 Jeremy Feinstein&lt;br>
+        SlidingMenu is licensed under the Apache License Version 2.0.
+        &lt;br>&lt;br>
+        &lt;b>ActionBarSherlock &lt;/b>&lt;br>
+        \u00A9 2012 Jake Wharton&lt;br>
+        ActionBarSherlock is licensed under the Apache License Version 2.0.
+        &lt;br>&lt;br>
+		&lt;b>The Apache License Version 2.0&lt;/b>&lt;br>
+		You may obtain a copy of the License at&lt;br>
+		&lt;center>&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0\'>
+				"http://www.apache.org/licenses/LICENSE-2.0&lt;/a>&lt;/center>&lt;br>
+		Unless required by applicable law or agreed to in writing, 
+		software distributed under the License is distributed on an 
+		\'AS IS\' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+		either express or implied. See the License for the specific 
+		language governing permissions and limitations under the License.</string>
+    <string name="no_email">Sorry, I couldn\'t find any e-mail apps on your phone</string>
+
+</resources>

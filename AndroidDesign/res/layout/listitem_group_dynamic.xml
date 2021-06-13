@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_small"
+    android:paddingTop="@dimen/dimen_small" >
+
+    <ImageView
+        android:id="@id/iv_icon"
+        android:layout_width="@dimen/dimen_100_dip"
+        android:layout_height="@dimen/dimen_100_dip"
+        android:src="@drawable/avatar_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_middle"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_smaller"
+            android:paddingTop="@dimen/dimen_smaller" >
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="发送人"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="[类型]  内容"
+                android:textColor="@color/text_color_list_item"
+                android:textSize="@dimen/dimen_textview_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="00:00"
+                android:textColor="@color/text_color_list_item_small"
+                android:textSize="@dimen/dimen_textview_text_small" />
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:singleLine="true"
+                android:text="评论(00)"
+                android:textColor="@color/text_color_list_item_small"
+                android:textSize="@dimen/dimen_textview_text_small" />
+
+            <qlsl.androiddesign.view.commonview.ArtTextView
+                android:id="@id/tv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:singleLine="true"
+                android:text="赞 (00)"
+                android:textColor="@color/text_color_list_item_small"
+                android:textSize="@dimen/dimen_textview_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:layout="@layout/preference_empty" >
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:disableDependentsState="false"
+            android:key="@string/showNoticeBar"
+            android:persistent="true"
+            android:title="显示通知栏" />
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="false"
+            android:dependency="@string/showNoticeBar"
+            android:disableDependentsState="false"
+            android:key="@string/showActionBar"
+            android:persistent="true"
+            android:title="显示操作栏" />
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="false"
+            android:dependency="@string/showActionBar"
+            android:key="@string/showTabTop"
+            android:persistent="true"
+            android:title="显示顶端选项卡" />
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:key="@string/showTabBottom"
+            android:persistent="true"
+            android:title="显示底端选项卡" />
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:key="@string/showLeftMenu"
+            android:persistent="true"
+            android:title="显示左滑菜单" />
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:key="@string/showRightMenu"
+            android:persistent="true"
+            android:title="显示右滑菜单" />
+        <qlsl.androiddesign.preference.BasicSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:key="@string/screenOrientation"
+            android:persistent="true"
+            android:title="屏幕方向竖直" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

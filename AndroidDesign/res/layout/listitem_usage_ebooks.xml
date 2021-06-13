@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/class_img_layout"
+            android:layout_width="108dp"
+            android:layout_height="150dp" 
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" >
+			<!-- 电子书封面的布局 -->
+            <ImageView
+                android:id="@+id/item_class_list_img"
+                android:layout_width="108dp"
+                android:layout_height="150dp"/>
+
+            <RelativeLayout android:id="@+id/ebook_subject_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="#80000000"
+                android:orientation="vertical" >
+				<!-- 电子书科目 -->
+                <TextView
+                    android:id="@+id/ebook_subject_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_class_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/class_img_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/class_img_layout"
+            android:textColor="#212121"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_class_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_class_list_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/class_img_layout"
+            android:text="你上次批阅到这儿："
+            android:textColor="#727272"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_class_list_classname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_class_list_text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/class_img_layout"
+            android:text="ChapterNameTest"
+            android:textColor="#727272"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_class_list_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/class_img_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="3月23日"
+            android:textColor="#727272"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

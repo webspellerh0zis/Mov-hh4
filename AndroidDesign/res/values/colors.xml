@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 新增 -->
+    <color name="text_color_title_login">#FF18B4ED</color>
+    <color name="button_color_light_blue">#FF16B4ED</color>
+
+    <!-- 常用start -->
+    <!-- 文本 -->
+    <color name="text_color_text1">#727272</color>
+    <color name="text_color_text2">#212121</color>
+    <color name="text_color_text3">#13BFD5</color>
+    <color name="text_color_text_default">#ff808080</color>
+
+    <!-- 文本 默认 -->
+    <color name="text_color_text_view">#FFFFFFFF</color>
+    <color name="text_color_edit_hint">#FFFFFFFF</color>
+    <color name="text_color_edit_text">#FFFFFFFF</color>
+    <color name="text_color_button">#FFFFFF</color>
+    <color name="text_color_title">#ff808080</color>
+    <color name="text_color_right_button">#ff808080</color>
+    <color name="text_color_right_button_pressed">#ff00ffff</color>
+    <color name="text_color_list_item">#212121</color>
+    <color name="text_color_list_item_small">#727272</color>
+    <color name="text_color_grid_item">#ff404040</color>
+
+    <!-- 背景相关 -->
+    <color name="bg_frame">#7F7F7F7F</color>
+    <color name="bg_button">#99A1DCF5</color>
+    <color name="bg_button_delete">#DB4437</color>
+    <color name="bg_common_title_view">#CECECE</color>
+    <color name="bg_common_content_view">#CECECE</color>
+    <color name="bg_common_progressbar_view">#7F7F7F7F</color>
+    <color name="bg_log">#393939</color>
+    <color name="bg_seekbar">#99A1DCF5</color>
+    <color name="bg_spinner">#00BCD4</color>
+    <color name="bg_map_periodic">#CECECE</color>
+
+    <!-- default相关 -->
+    <color name="text_color_default">#ff404040</color>
+    <color name="text_color_light">#00BCD4</color>
+    <color name="text_color_common">#ff6529</color>
+    <color name="text_color_price">#165561</color>
+    <color name="text_color_distance">#610061</color>
+    <color name="text_color_action_item">#ff404040</color>
+    <color name="button_default">#99A1DCF5</color>
+    <color name="button_delete">#DB4437</color>
+    <color name="swipe_delete">#FFBA1D</color>
+    <color name="window_default">#EE7F7F7F</color>
+
+    <!-- Selector -->
+    <color name="list_item_press">#e04fc1e9</color>
+    <color name="list_item_release">#FFFFFF</color>
+    <color name="grid_item_press">#e04fc1e9</color>
+    <color name="grid_item_release">#FFFFFFFF</color>
+    <color name="exp_list_item_press">#e04fc1e9</color>
+    <color name="exp_list_item_release">#FFF2F2F2</color>
+    <color name="quick_action_item_press">#e04fc1e9</color>
+    <color name="quick_action_item_release">#60A6DFF6</color>
+
+    <!-- TAB相关 -->
+    <color name="tab_text_default">#727272</color>
+    <color name="tab_text_light">#00BCD4</color>
+    <color name="navigation_text_default">#646464</color>
+    <color name="navigation_text_light">#FF0000ff</color>
+    <color name="color_space_text_default">#7fefefef</color>
+    <color name="color_space_text_light">#00BCD4</color>
+    <color name="tab_bg_default">#CECECE</color>
+    <color name="tab_bg_light">#CECECE</color>
+    <color name="tab_toast_bg">#ffff00ff</color>
+    <color name="devider">#E1E1E1</color>
+    <color name="devider_vertical">#E1E1E1</color>
+    <color name="guide">#ff404040</color>
+    <!-- 常用end -->
+
+
+    <!-- TimePicker相关 -->
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+
+    <!-- 友盟相关 -->
+    <color name="umeng_socialize_comments_bg">#F4F4F4</color>
+    <color name="umeng_socialize_color_group">#2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#333333</color>
+    <color name="umeng_socialize_list_item_bgcolor">#FFFFFF</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+    <color name="umeng_socialize_text_time">#999999</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="umeng_socialize_text_friends_list">#959696</color>
+    <color name="umeng_socialize_text_share_content">#666666</color>
+    <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
+    <color name="umeng_socialize_text_ucenter">#595959</color>
+    <color name="umeng_socialize_edit_bg">#C4C4C4</color>
+    <color name="umeng_socialize_grid_divider_line">#F8F8F8</color>
+
+    <!-- 分界线 -->
+    <color name="darkgray">#ff404040</color>
+    <color name="black">#ff000000</color>
+    <color name="light_black">#30000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="half_red">#7fff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="light_green">#ffA0D46A</color>
+    <color name="light_gray">#ffc0c0c0</color>
+    <color name="white">#ffffffff</color>
+    <color name="light_white">#ddd</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="light_yellow">#FFFFCD57</color>
+    <color name="blue">#FF0000ff</color>
+    <color name="light_blue">#7F00007f</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="gray">#ff808080</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="light_cyan">#3000ffff</color>
+    <color name="half_cyan">#7f00ffff</color>
+    <color name="holo_blue">#FF33E5B5</color>
+
+    <!-- 透明与半透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="translucence">#e0000000</color>
+    <color name="middle">#7F7F7F7F</color>
+    <!-- 分界线 -->
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/middle"
+        android:padding="@dimen/dimen_middle" >
+
+        <qlsl.androiddesign.view.commonview.SingleEditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="请输入"
+            android:imeOptions="actionDone"
+            android:textColor="@color/text_color_text1"
+            android:textColorHint="@color/text_color_text1"
+            android:textSize="@dimen/dimen_edittext_text" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/tv_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </FrameLayout>
+
+</LinearLayout>

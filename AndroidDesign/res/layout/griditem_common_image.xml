@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/grid_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_item"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/iv_grid_item"
+        android:layout_width="@dimen/dimen_168_dip"
+        android:layout_height="@dimen/dimen_192_dip"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@+id/tv_grid_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_stroke"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_240_dip"
+        android:minWidth="@dimen/dimen_168_dip"
+        android:paddingBottom="@dimen/dimen_72_dip"
+        android:paddingLeft="@dimen/dimen_smaller"
+        android:paddingRight="@dimen/dimen_smaller"
+        android:paddingTop="@dimen/dimen_72_dip"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_list_item_text"
+        android:visibility="gone" />
+
+</LinearLayout>

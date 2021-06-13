@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标题栏[common_title_preference]置于此处时，在列表外，列表会有上边距 -->
+<!-- 标题栏置于preference中时，在列表内，滑动会挤走标题栏 -->
+<!-- 使用外向标题栏+填补列表上边距方案 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_title_view"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_preference" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_content_view"
+        android:dividerHeight="0.01pt" />
+
+</LinearLayout>

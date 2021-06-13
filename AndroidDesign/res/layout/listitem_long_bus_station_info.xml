@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_middle" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/text_color_list_item"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车站地址  :  "
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <TextView
+            android:id="@+id/tv_adds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话  :  "
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small" />
+    </LinearLayout>
+
+</LinearLayout>

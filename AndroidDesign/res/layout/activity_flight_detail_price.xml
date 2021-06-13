@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="舱位类型"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="货币类型"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="单程票价"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="往返票价"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="生效日期"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="截至日期"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:text="航空公司的两字代码"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="运价规则"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="机场税"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="燃油税"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="基础舱位（F/C/Y）"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="折扣率"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="出发城市"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:text="到达城市"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+    </LinearLayout>
+
+    <include layout="@layout/common_devider" />
+
+    <include layout="@layout/common_list_view" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:layout="@layout/preference_empty" >
+        <qlsl.androiddesign.preference.LogSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:disableDependentsState="false"
+            android:key="@string/debugModel"
+            android:persistent="true"
+            android:title="调试模式" />
+        <qlsl.androiddesign.preference.LogSettingToggleButtonPreference
+            android:defaultValue="true"
+            android:dependency="@string/debugModel"
+            android:disableDependentsState="false"
+            android:key="@string/outputPhoneModel"
+            android:persistent="true"
+            android:title="手机输出" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

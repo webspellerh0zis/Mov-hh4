@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60_dip"
+    android:orientation="horizontal" >
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dimen_middle"
+        android:ems="5"
+        android:gravity="right"
+        android:text="100分"
+        android:textColor="@color/text_color_text_default"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <TextView
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/yellow" />
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_middle"
+        android:text="0人"
+        android:textColor="@color/text_color_text_default"
+        android:textSize="@dimen/dimen_textview_text" />
+
+</LinearLayout>

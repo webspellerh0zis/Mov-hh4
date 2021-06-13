@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_record_dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/record_start_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_space_vertical" />
+
+        <qlsl.androiddesign.view.recordview.VolumeView
+            android:id="@id/record_volume_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/common_space_vertical" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/record_time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手指上滑，取消发送"
+            android:textColor="@color/text_color_text1"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_space_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/record_cancel_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/common_space_vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat_icon_voice_short" />
+
+        <include layout="@layout/common_space_vertical" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_button_red"
+            android:padding="@dimen/dimen_small"
+            android:text="松开手指，取消发送"
+            android:textColor="@color/text_color_text1"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_space_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

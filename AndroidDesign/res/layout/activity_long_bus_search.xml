@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_largest" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_small"
+        android:layout_marginBottom="@dimen/dimen_largest"
+        android:text="汽车站到站查询"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <EditText
+        android:id="@+id/et_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="出发城市"
+        android:singleLine="true"
+        android:textColor="@color/text_color_edit_text"
+        android:textColorHint="@color/text_color_edit_hint"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_small"
+        android:src="@drawable/iv_icon_arrive" />
+
+    <EditText
+        android:id="@+id/et_arrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="到达城市"
+        android:singleLine="true"
+        android:textColor="@color/text_color_edit_text"
+        android:textColorHint="@color/text_color_edit_hint"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_small"
+        android:text="输入汉字/拼音/区号"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_largest"
+        android:gravity="center"
+        android:text="or"
+        android:textColor="@color/darkgray"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_small"
+        android:gravity="center"
+        android:text="汽车站信息查询"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="城市名称"
+        android:singleLine="true"
+        android:textColor="@color/text_color_edit_text"
+        android:textColorHint="@color/text_color_edit_hint"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+    <Button
+        android:id="@id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_large"
+        android:background="@drawable/btn_search"
+        android:onClick="onClick"
+        android:text="搜  索"
+        android:textColor="@color/text_color_button"
+        android:textSize="@dimen/dimen_button_text" />
+
+</LinearLayout>

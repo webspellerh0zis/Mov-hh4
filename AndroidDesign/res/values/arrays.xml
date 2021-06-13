@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圈子类别,限教师 -->
+    <string-array name="group_type_teacher">
+        <item>全部</item>
+        <item>同事圈</item>
+        <item>班级圈</item>
+        <item>分享圈</item>
+    </string-array>
+    
+    <!-- 圈子类别,限学生与家长-->
+    <string-array name="group_type_student">
+        <item>全部</item>
+        <item>班级圈</item>
+        <item>分享圈</item>
+    </string-array>
+
+    <!-- 学习笺标签 -->
+    <string-array name="memo_tag">
+        <item>讲解笺</item>
+        <item>任务笺</item>
+    </string-array>
+
+    <!-- 框架设置 -->
+    <string-array name="setting">
+        <item>基本设置</item>
+        <item>登录设置</item>
+        <item>隐私设置</item>
+        <item>意见反馈</item>
+        <item>检测更新</item>
+        <item>分享</item>
+        <item>关于</item>
+        <item>帮助</item>
+    </string-array>
+
+    <!-- Log日志预设收件人 -->
+    <string-array name="presetting_log_receiver">
+        <item>纳兰:2939143482@qq.com</item>
+    </string-array>
+
+    <!-- 公交排序 -->
+    <string-array name="bus_sort">
+        <item>综合排序</item>
+        <item>换乘次数</item>
+        <item>步行距离</item>
+        <item>时间</item>
+        <item>距离</item>
+        <item>地铁优先</item>
+    </string-array>
+
+    <!-- 语音设置发言人 -->
+    <string-array name="speech_speaker_show">
+        <item>小燕</item>
+        <item>小宇</item>
+        <item>凯瑟琳</item>
+        <item>亨利</item>
+        <item>玛丽</item>
+        <item>小研</item>
+        <item>小琪</item>
+        <item>小峰</item>
+        <item>小梅</item>
+        <item>小莉</item>
+        <item>小蓉</item>
+        <item>小芸</item>
+        <item>小坤</item>
+        <item>小强 </item>
+        <item>小莹</item>
+        <item>小新</item>
+        <item>楠楠</item>
+        <item>老孙</item>
+    </string-array>
+
+    <!-- 语音设置发言人 -->
+    <string-array name="speech_speaker">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+
+    <!-- 语音设置音频流类型 -->
+    <string-array name="speech_stream">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+
+    <!-- JazzyViewPager动画效果 -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@color/bg_button_delete" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/dimen_small"
+        android:bottomRightRadius="@dimen/dimen_small"
+        android:topLeftRadius="@dimen/dimen_small"
+        android:topRightRadius="@dimen/dimen_small" />
+
+    <padding
+        android:bottom="@dimen/dimen_middle"
+        android:left="@dimen/dimen_middle"
+        android:right="@dimen/dimen_middle"
+        android:top="@dimen/dimen_middle" />
+
+</shape>

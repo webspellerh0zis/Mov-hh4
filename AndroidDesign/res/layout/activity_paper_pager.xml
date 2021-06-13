@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/guideView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_84_dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/tv_guide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="原题"
+            android:textColor="@drawable/textcolor_guide"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_guide_devider" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/tv_guide2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="答案"
+            android:textColor="@drawable/textcolor_guide"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_guide_devider" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/tv_guide3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="分析"
+            android:textColor="@drawable/textcolor_guide"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_guide_devider" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@id/tv_guide4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="变式"
+            android:textColor="@drawable/textcolor_guide"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/iv_cursor" />
+
+    <include layout="@layout/common_devider" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <include layout="@layout/common_devider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_middle" >
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/iv_arrow_right"
+            android:drawablePadding="@dimen/dimen_small"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="上一题"
+            android:textColor="@drawable/textcolor_button"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dimen_small"
+            android:drawableRight="@drawable/iv_arrow_right"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="下一题"
+            android:textColor="@drawable/textcolor_button"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

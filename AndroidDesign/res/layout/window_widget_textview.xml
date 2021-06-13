@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_middle" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_middle"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进入"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+    <include layout="@layout/common_devider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文本大小："
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_minus"
+            android:onClick="onClick" />
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_large"
+            android:text="17"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_large"
+            android:text="sp"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_plus"
+            android:onClick="onClick" />
+
+        <include layout="@layout/common_space_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.WidgetTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文本颜色："
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <qlsl.androiddesign.view.commonview.WidgetEditText
+            android:id="@+id/et_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_72_dip"
+            android:layout_marginLeft="@dimen/dimen_largest"
+            android:layout_marginRight="@dimen/dimen_largest"
+            android:background="@drawable/bg_edittext"
+            android:digits="@string/color_digits"
+            android:hint=""
+            android:inputType="phone"
+            android:maxLength="9"
+            android:paddingLeft="@dimen/dimen_small"
+            android:singleLine="true"
+            android:textColor="@color/text_color_edit_text"
+            android:textColorHint="@color/text_color_edit_hint"
+            android:textSize="@dimen/dimen_edittext_text" />
+    </LinearLayout>
+
+</LinearLayout>

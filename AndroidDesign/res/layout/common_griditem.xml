@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/grid_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_item"
+    android:onClick="onClick"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_smallest"
+    android:paddingTop="@dimen/dimen_smallest" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="30dp" />
+
+    <qlsl.androiddesign.view.commonview.WidgetArtTextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_color_grid_item"
+        android:textSize="@dimen/dimen_grid_item_text" />
+
+</LinearLayout>

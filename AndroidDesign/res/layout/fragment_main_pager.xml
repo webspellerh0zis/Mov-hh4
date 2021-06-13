@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:drawable/divider_horizontal_dark"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+
+        <include
+            android:id="@+id/fragment_main_title_bar"
+            layout="@layout/fragment_main_title_bar"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg_frame"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <LinearLayout
+            android:id="@id/tab_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/tab1_indicator" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/tab2_indicator" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/tab3_indicator" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/tab4_indicator" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/tab5_indicator" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/launcher_pull_door_view" />
+
+</FrameLayout>

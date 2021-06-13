@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="站点"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="终始时间"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="车型"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="列次"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="终始站点"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="历时"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="高级软卧"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="其他"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="软卧"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="软座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="特等座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="无座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="硬卧"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="其他"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="硬座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="二等座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="一等座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+
+            <include layout="@layout/common_devider_vertical" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_middle"
+                android:paddingTop="@dimen/dimen_middle"
+                android:text="商务座"
+                android:textColor="@color/magenta"
+                android:textSize="@dimen/dimen_textview_text" />
+        </LinearLayout>
+
+        <include layout="@layout/common_devider" />
+
+        <include layout="@layout/common_list_view" />
+    </LinearLayout>
+
+</HorizontalScrollView>

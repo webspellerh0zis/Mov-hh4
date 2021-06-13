@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_small"
+        android:layout_marginLeft="@dimen/dimen_largest"
+        android:layout_marginRight="@dimen/dimen_largest"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启自动播放"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <ToggleButton
+            android:id="@+id/tbtn_autoplay"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tbtn"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_small"
+        android:layout_marginLeft="@dimen/dimen_largest"
+        android:layout_marginRight="@dimen/dimen_largest"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启点击播放"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <ToggleButton
+            android:id="@+id/tbtn_clickplay"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tbtn"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_small"
+        android:layout_marginLeft="@dimen/dimen_largest"
+        android:layout_marginRight="@dimen/dimen_largest"
+        android:layout_marginTop="@dimen/dimen_small"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发音人"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <Spinner
+            android:id="@+id/sp_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/speech_speaker_show"
+            android:minWidth="130dp"
+            android:prompt="@string/app_name"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_small"
+        android:layout_marginLeft="@dimen/dimen_largest"
+        android:layout_marginRight="@dimen/dimen_largest"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音频流类型"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <Spinner
+            android:id="@+id/sp_stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/speech_stream"
+            android:minWidth="130dp"
+            android:prompt="@string/app_name"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_small"
+        android:layout_marginLeft="@dimen/dimen_largest"
+        android:layout_marginRight="@dimen/dimen_largest"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.Button
+            android:id="@+id/btn_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/dimen_small"
+            android:paddingLeft="@dimen/dimen_large"
+            android:paddingRight="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_small"
+            android:text="随机"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <qlsl.androiddesign.view.commonview.Button
+            android:id="@+id/btn_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_default"
+            android:onClick="onClick"
+            android:paddingBottom="@dimen/dimen_small"
+            android:paddingLeft="@dimen/dimen_large"
+            android:paddingRight="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_small"
+            android:text="朗读"
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/dimen_button_text" />
+    </LinearLayout>
+
+    <qlsl.androiddesign.view.commonview.EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimen_largest"
+        android:layout_marginRight="@dimen/dimen_largest"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edittext"
+        android:gravity="top|left"
+        android:padding="@dimen/dimen_small"
+        android:text="请输入文字"
+        android:textColor="@color/text_color_edit_text"
+        android:textSize="@dimen/dimen_edittext_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:gravity="center_horizontal"
+            android:text="语速"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <SeekBar
+            android:id="@+id/sb_speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressDrawable="@drawable/color_seekbar_red" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:gravity="center_horizontal"
+            android:text="音调"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <SeekBar
+            android:id="@+id/sb_pitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressDrawable="@drawable/color_seekbar_green" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:gravity="center_horizontal"
+            android:text="音量"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+
+        <SeekBar
+            android:id="@+id/sb_volume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progressDrawable="@drawable/color_seekbar_blue" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/dimen_textview_text" />
+    </LinearLayout>
+
+</LinearLayout>

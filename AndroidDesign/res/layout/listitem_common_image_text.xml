@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_small"
+        android:paddingLeft="@dimen/dimen_middle"
+        android:paddingRight="@dimen/dimen_middle"
+        android:paddingTop="@dimen/dimen_small" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/dimen_large"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_small_middler" />
+
+        <include layout="@layout/common_space_horizontal" />
+
+        <qlsl.androiddesign.view.commonview.TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item_small"
+            android:textSize="@dimen/dimen_textview_text_smallest"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="65dp"
+            android:layout_height="0.01pt"
+            android:background="@color/list_item_release" />
+
+        <include layout="@layout/common_devider" />
+    </LinearLayout>
+
+</LinearLayout>

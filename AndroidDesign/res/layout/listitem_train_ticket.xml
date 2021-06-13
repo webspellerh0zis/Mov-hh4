@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_station"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" >
+
+            <requestFocus />
+        </TextView>
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_train_no"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_station_final"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_run_time"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_gr_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_qt_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_rw_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_rz_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_tz_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_wz_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_yw_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_yz_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_ze_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_zy_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+
+        <include layout="@layout/common_devider_vertical" />
+
+        <TextView
+            android:id="@+id/tv_swz_num"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/dimen_large"
+            android:paddingTop="@dimen/dimen_large"
+            android:singleLine="true"
+            android:textColor="@color/text_color_list_item"
+            android:textSize="@dimen/dimen_textview_text_small" />
+    </LinearLayout>
+
+    <include layout="@layout/common_devider" />
+
+</LinearLayout>

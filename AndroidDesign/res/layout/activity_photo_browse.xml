@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucence"
+    android:orientation="vertical" >
+
+    <qlsl.androiddesign.view.photoview.HackyViewPager
+        android:id="@id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/title_view_photo_browse" />
+
+    <qlsl.androiddesign.view.commonview.TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/dimen_small"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/dimen_textview_text_small" />
+
+</FrameLayout>

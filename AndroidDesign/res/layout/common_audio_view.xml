@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/audioView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone" >
+
+    <View
+        android:id="@id/audio_bg"
+        android:layout_width="@dimen/dimen_216_dip"
+        android:layout_height="@dimen/dimen_72_dip"
+        android:background="@drawable/audio_button_bg"
+        android:onClick="onClick" />
+
+    <ImageView
+        android:id="@id/audio_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_24_dip"
+        android:background="@drawable/audio_list_l" />
+
+    <qlsl.androiddesign.view.commonview.ArtTextView
+        android:id="@id/audio_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_toRightOf="@id/audio_bg"
+        android:textColor="@color/text_color_text1"
+        android:textSize="@dimen/dimen_textview_text" />
+
+    <ImageView
+        android:id="@id/audio_delete"
+        android:layout_width="@dimen/dimen_30_dip"
+        android:layout_height="@dimen/dimen_30_dip"
+        android:layout_toRightOf="@id/audio_time"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_24_dip"
+        android:background="@drawable/bg_circle_red"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_delete_imgs"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/com.old.dayeasy.ebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp">
+    <LinearLayout android:id="@+id/layout_sendTime"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical"
+                  android:layout_marginBottom="4dp"
+                  android:visibility="gone">
+        <TextView
+                android:id="@+id/tv_sendTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/chat_text_date_style"
+                android:background="@drawable/text_radius"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:id="@+id/layout_chatContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_sendTime"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+        <ImageView
+                android:id="@+id/iv_userHead"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/avatar_default"
+                android:clickable="true"
+                android:contentDescription="头像"/>
+
+        <TextView
+                android:id="@+id/tv_chatContent"
+                style="@style/chat_content_date_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textIsSelectable="true"
+                android:layout_toRightOf="@id/iv_userHead"
+                android:background="@drawable/chat_from_bg"/>
+
+        <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/tv_chatContent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:lineSpacingExtra="2dp"
+                android:minHeight="50dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_username"
+                style="@style/chat_text_name_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iv_userHead"
+                android:layout_toLeftOf="@id/tv_chatContent"/>
+    </RelativeLayout>
+</RelativeLayout>

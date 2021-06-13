@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/translucence"
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_small"
+    android:paddingRight="@dimen/dimen_small"
+    android:paddingTop="@dimen/dimen_small" >
+
+    <ImageView
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dimen_small"
+        android:background="@drawable/btn_play" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/iv_media_stop" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_large"
+            android:progressDrawable="@drawable/list_seekbar"
+            android:thumb="@drawable/iv_media_bar" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="bottom"
+            android:textColor="@color/cyan"
+            android:textSize="@dimen/dimen_textview_text_smallest" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- common_root相关 -->
+    <item name="common_root" type="id">false</item>
+    <item name="viewgroup_common_content" type="id">false</item>
+    <item name="viewgroup_common_title" type="id">false</item>
+    <item name="viewgroup_common_title_move" type="id">false</item>
+    <item name="viewgroup_common_title_immersion_fullscreen" type="id">false</item>
+    <item name="title_view" type="id">false</item>
+    <item name="contentView" type="id">false</item>
+    <item name="customTitleView" type="id">false</item>
+
+    <!-- 标题栏相关 -->
+    <item name="tv_title" type="id">false</item>
+    <item name="btn_back" type="id">false</item>
+    <item name="btn_right" type="id">false</item>
+    <item name="iv_border" type="id">false</item>
+
+    <!-- SearchView相关 -->
+    <item name="btn_search" type="id">false</item>
+
+    <!-- ProgressBar相关 -->
+    <item name="viewgroup_progressbar" type="id">false</item>
+    <item name="tv_progressbar" type="id">false</item>
+
+    <!-- Tab相关 -->
+    <item name="tab_parent" type="id">false</item>
+    <item name="tab_tv_text" type="id">false</item>
+    <item name="tab_iv_icon" type="id">false</item>
+
+    <!-- View相关 -->
+    <item name="refreshListView" type="id">false</item>
+    <item name="refreshGridView" type="id">false</item>
+    <item name="refreshScrollView" type="id">false</item>
+    <item name="listView" type="id">false</item>
+    <item name="gridView" type="id">false</item>
+    <item name="tv_empty" type="id">false</item>
+    <item name="emptyParentView" type="id">false</item>
+    <item name="searchView" type="id">false</item>
+    <item name="viewPager" type="id">false</item>
+    <item name="scrollView" type="id">false</item>
+    <item name="webView" type="id">false</item>
+    <item name="net_indicate_view" type="id">false</item>
+    <item name="expandableListView" type="id">false</item>
+    <item name="spinnerView" type="id">false</item>
+    <item name="mapView" type="id">false</item>
+    <item name="photoView" type="id">false</item>
+    <item name="tagView" type="id">false</item>
+    <item name="radioButton" type="id">false</item>
+    <item name="spaceView" type="id">false</item>
+
+    <!-- item相关 -->
+    <item name="list_item" type="id">false</item>
+    <item name="grid_item" type="id">false</item>
+
+    <!-- 分界线相关 -->
+    <item name="devider_view" type="id">false</item>
+    <item name="devider_vertical_view" type="id">false</item>
+    <item name="guide_view" type="id">false</item>
+
+    <!-- ViewPager+Fragment相关 -->
+    <item name="tv_guide1" type="id">false</item>
+    <item name="tv_guide2" type="id">false</item>
+    <item name="tv_guide3" type="id">false</item>
+    <item name="tv_guide4" type="id">false</item>
+    <item name="tv_guide5" type="id">false</item>
+    <item name="tv_guide6" type="id">false</item>
+    <item name="iv_cursor" type="id">false</item>
+
+    <!-- Button相关 -->
+    <item name="btn_ok" type="id">false</item>
+    <item name="btn_cancel" type="id">false</item>
+    <item name="tv_ok" type="id">false</item>
+    <item name="tv_cancel" type="id">false</item>
+
+    <!-- SwipeDeleteListView相关 -->
+    <item name="front_view" type="id">false</item>
+    <item name="back_view" type="id">false</item>
+
+    <!-- 常用相关 -->
+    <item name="et_search" type="id">false</item>
+    <item name="et_content" type="id">false</item>
+    <item name="tv_common" type="id">false</item>
+    <item name="tv_icon" type="id">false</item>
+    <item name="tv_name" type="id">false</item>
+    <item name="tv_text" type="id">false</item>
+    <item name="tv_type" type="id">false</item>
+    <item name="tv_value" type="id">false</item>
+    <item name="tv_version" type="id">false</item>
+    <item name="tv_content" type="id">false</item>
+    <item name="tv_num" type="id">false</item>
+    <item name="tv_info" type="id">false</item>
+    <item name="tv_price" type="id">false</item>
+    <item name="tv_time" type="id">false</item>
+    <item name="tv_sum" type="id">false</item>
+    <item name="tv_toast" type="id">false</item>
+    <item name="tv_current_price" type="id">false</item>
+    <item name="tv_original_price" type="id">false</item>
+    <item name="tv_address" type="id">false</item>
+    <item name="tv_tag" type="id">false</item>
+    <item name="tv_descript" type="id">false</item>
+    <item name="tv_intro" type="id">false</item>
+    <item name="tv_distance" type="id">false</item>
+    <item name="tv_navigation" type="id">false</item>
+    <item name="iv_icon" type="id">false</item>
+    <item name="iv_arrow" type="id">false</item>
+    <item name="iv_click" type="id">false</item>
+    <item name="iv_audio" type="id">false</item>
+    <item name="iv_video" type="id">false</item>
+    <item name="iv_content" type="id">false</item>
+    <item name="tv_reply" type="id">false</item>
+    <item name="iv_speech" type="id">false</item>
+    <item name="iv_select" type="id">false</item>
+    <item name="iv_edit" type="id">false</item>
+    <item name="btn_delete" type="id">false</item>
+    <item name="iv_value" type="id">false</item>
+    <item name="iv_delete" type="id">false</item>
+
+    <!-- audioView相关 -->
+    <item name="audioView" type="id">false</item>
+    <item name="audio_bg" type="id">false</item>
+    <item name="audio_play" type="id">false</item>
+    <item name="audio_time" type="id">false</item>
+    <item name="audio_delete" type="id">false</item>
+
+    <!-- replyView相关 -->
+    <item name="replyView" type="id">false</item>
+    <item name="reply_speak" type="id">false</item>
+    <item name="reply_content" type="id">false</item>
+    <item name="reply_record" type="id">false</item>
+    <item name="reply_photo" type="id">false</item>
+    <item name="reply_send" type="id">false</item>
+
+    <!-- recordView相关 -->
+    <item name="record_start_view" type="id">false</item>
+    <item name="record_volume_view" type="id">false</item>
+    <item name="record_time_view" type="id">false</item>
+    <item name="record_cancel_view" type="id">false</item>
+
+    <!-- recordTextView相关 -->
+    <item name="record_text_view" type="id">false</item>
+
+    <!-- commentPraiseNumView相关 -->
+    <item name="commentPraiseNumView" type="id">false</item>
+    <item name="tv_comment" type="id">false</item>
+    <item name="tv_praise" type="id">false</item>
+
+</resources>
