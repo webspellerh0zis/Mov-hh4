@@ -1,6 +1,6 @@
 AndroidSoftwareDesign框架说明：
 
-0：框架版权
+1.框架版权
 
   (1)所有者：ylq
 
@@ -16,12 +16,14 @@ AndroidSoftwareDesign框架说明：
 
  （7)目标：清晰(对内代码整洁)，公开，透明（使用日志记录方式对它人公开）
 
-1：框架结构
+2.框架结构
+
   (1)界面部分：配置了包含顶端ActionBar,底端Tab,左右侧滑菜单的统一修改接口：BasicSettingConstant
 
   (2)功能部分：包含Http连接,OrmLite数据库,网络图片异步加载
 
-2：包名说明
+3.包名说明
+
   (1)应用程序包名(Application Package)与启动Activity的文件夹名不同。
 
   (2)Application Package冲突的修改：Android tools-->Rename Application Package
@@ -40,7 +42,7 @@ AndroidSoftwareDesign框架说明：
 
      包qlsl.androiddesign.view.rippleview     ：波纹文本控件专属包   包含assets中的字体库文件Satisfy-Regular.ttf
 
-3：环境说明
+4.环境说明
 
   (1) API：基于Android 4.2.2
 
@@ -48,7 +50,7 @@ AndroidSoftwareDesign框架说明：
 
   (3) 平台：Windos开发，Android手机APP
 
-4：代码规范
+5.代码规范
 
   (1)新加的Activity: 放在subactivity包下,继承自baseactivity包的BaseActivity
 
