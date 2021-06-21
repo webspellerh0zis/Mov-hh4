@@ -6,7 +6,7 @@ AndroidSoftwareDesign框架说明：
 
   (2)名称：AndroidSoftwareDesign
 
-  (3)完成时间：2014-12—30
+  (3)完成时间：2014-12-30
 
   (4)框架类型：Android平台的普通软件框架类型
 
