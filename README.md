@@ -28,9 +28,9 @@ AndroidSoftwareDesign框架说明：
 
   (2)Application Package冲突的修改：Android tools-->Rename Application Package
 
-  (3)个人项目的Application Package命名规则：myapp.myproject.activity
+  (3)个人项目的Application Package命名规则：com.qlsl.androiddesign.appname
 
-  (4)公司项目的Application Package命名规则：mycompany.myproject.activity
+  (4)公司项目的Application Package命名规则：com.companyname.androiddesign.appname
 
   (5)工程外来包说明：已经配置以下包的drawable，selector，layout，anim，shape，theme，attr,id等文件到工程中
 
@@ -48,7 +48,7 @@ AndroidSoftwareDesign框架说明：
 
   (2) 编码：utf-8
 
-  (3) 平台：Windos开发，Android手机APP
+  (3) 平台：Windows开发，Android手机APP
 
 5.代码规范
 
