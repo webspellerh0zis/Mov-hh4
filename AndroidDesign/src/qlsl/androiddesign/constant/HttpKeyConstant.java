@@ -14,9 +14,9 @@ public interface HttpKeyConstant {
 	/**
 	 * 网络参数value
 	 */
-//	String VALUE_SIGN_SUFFIX = "dy123456";
-	String VALUE_SIGN_SUFFIX = "A10A0D200BC949B69B0CB8A50C12303A";
-	String VALUE_PARTNER = "android_ebook";
+//	String VALUE_SIGN_SUFFIX = "";
+	String VALUE_SIGN_SUFFIX = "";
+	String VALUE_PARTNER = "";
 
 	
 

@@ -21,7 +21,7 @@
         android:paddingRight="@dimen/dimen_small_middle"
         android:paddingTop="@dimen/dimen_larger"
         android:singleLine="true"
-        android:text="s001@dy.com"
+        android:text=""
         android:textColor="@color/gray"
         android:textColorHint="@color/gray"
         android:textSize="@dimen/dimen_edittext_text" />
@@ -64,7 +64,7 @@
             android:paddingTop="@dimen/dimen_larger"
             android:password="true"
             android:singleLine="true"
-            android:text="dayeasy123"
+            android:text=""
             android:textColor="@color/gray"
             android:textColorHint="@color/gray"
             android:textSize="@dimen/dimen_edittext_text" />

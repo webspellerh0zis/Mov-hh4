@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import qlsl.androiddesign.activity.baseactivity.BaseActivity;
-import qlsl.androiddesign.util.commonutil.Log;
 
 /**
  * activity自定义栈<br/>
@@ -220,7 +219,7 @@ public class ActivityManager {
 	 * 输出栈信息<br/>
 	 */
 	private void outputStackInfo() {
-		Log.i("stack", activityStack);
+//		Log.i("stack", activityStack);
 	}
 
 	/**

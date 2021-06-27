@@ -37,14 +37,14 @@ public class ScrollHideManager implements OnTouchListener, AnimatorListener {
 		this.listView = refreshView.getRefreshableView();
 		this.searchView = searchView;
 		setMarginTop(searchView.getHeight() + offset);
-		refreshView.getRefreshableView().setOnTouchListener(this);
+//		refreshView.getRefreshableView().setOnTouchListener(this);
 	}
 
 	public ScrollHideManager(AbsListView listView, View searchView) {
 		this.listView = listView;
 		this.searchView = searchView;
 		setMarginTop(searchView.getHeight() + offset);
-		listView.setOnTouchListener(this);
+//		listView.setOnTouchListener(this);
 	}
 
 	@SuppressLint({ "ClickableViewAccessibility" })

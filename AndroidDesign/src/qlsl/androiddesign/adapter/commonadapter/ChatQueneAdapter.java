@@ -11,7 +11,6 @@ import android.widget.TextView;
 import qlsl.androiddesign.activity.baseactivity.BaseActivity;
 import qlsl.androiddesign.adapter.baseadapter.BaseAdapter;
 import qlsl.androiddesign.db.othertable.ChatQueue;
-import qlsl.androiddesign.util.otherutil.Utils;
 
 public class ChatQueneAdapter extends BaseAdapter<ChatQueue> {
 
@@ -38,7 +37,6 @@ public class ChatQueneAdapter extends BaseAdapter<ChatQueue> {
 
 		tv_name.setText(name);
 		tv_content.setText(content);
-		tv_time.setText(Utils.dateFormatForChat(time));
 
 		if (queneType == 0) {
 

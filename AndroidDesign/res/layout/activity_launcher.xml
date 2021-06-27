@@ -22,13 +22,17 @@
             android:gravity="center"
             android:orientation="horizontal" >
 
-            <ImageView
+            <qlsl.androiddesign.view.commonview.Button
                 android:id="@+id/iv_launcher"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_largest"
+                android:layout_marginRight="@dimen/dimen_largest"
+                android:background="@drawable/btn_bg_default"
                 android:onClick="onClick"
-                android:scaleType="center"
-                android:src="@drawable/iv_launcher"
+                android:text="进入首页"
+                android:textColor="@color/text_color_button"
+                android:textSize="@dimen/dimen_button_text"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>

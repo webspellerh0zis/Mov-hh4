@@ -5,49 +5,49 @@ public interface UrlConstant extends MessageConstant {
 	/**
 	 * 静态服务器
 	 */
-	String STATIC_SERVER="http://static.dayez.net";
+	String STATIC_SERVER="";
 
 	/**
 	 * 测试服务器基本url
 	 */
-//	String BASE_URL = "http://open.v3.deyi.com/v3/";
+//	String BASE_URL = "";
 
 	/**
 	 * 测试服务器时间戳url
 	 */
-//	String TICK_URL = "http://open.v3.deyi.com/ticks";
+//	String TICK_URL = "";
 
 	/**
 	 * 测试服务器图片上传url<br/>
 	 */
-//	String URL_FILE_PHOTO_SERVER = "http://file.dayez.net/uploader?type=1";
+//	String URL_FILE_PHOTO_SERVER = "";
 
 	/**
 	 * 测试服务器音频上传url<br/>
 	 */
-//	String URL_FILE_AUDIO_SERVER = "http://file.dayez.net/uploader?type=6";
+//	String URL_FILE_AUDIO_SERVER = "";
 
 	// ---------------分界线---------------
 
 	/**
 	 * 线上服务器基本url
 	 */
-	 String BASE_URL = "http://open.dayeasy.net/v3/";
+	 String BASE_URL = "";
 
 	/**
 	 * 线上服务器时间戳url
 	 */
-	 String TICK_URL = "http://open.dayeasy.net/ticks";
+	 String TICK_URL = "";
 
 	/**
 	 * 线上服务器图片上传<br/>
 	 */
-	 String URL_FILE_PHOTO_SERVER = "http://file.dayeasy.net/uploader?type=1";
+	 String URL_FILE_PHOTO_SERVER = "";
 
 	/**
 	 * 线上服务器音频上传<br/>
 	 */
-	 String URL_FILE_AUDIO_SERVER = "http://file.dayeasy.net/uploader?type=6";
+	 String URL_FILE_AUDIO_SERVER = "";
 
 	// ---------------分界线---------------
 
@@ -60,7 +60,7 @@ public interface UrlConstant extends MessageConstant {
 	 * 框架测试url
 	 */
 
-	String EXAMPLE_URL = "http://web.wzta.gov.cn/api/hotspot/list.jspx";
+	String EXAMPLE_URL = "";
 
 	// ---------------分界线---------------
 

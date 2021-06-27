@@ -9,7 +9,6 @@ import com.qlsl.androiddesign.appname.R;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.Selection;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -20,9 +19,6 @@ import qlsl.androiddesign.activity.commonactivity.MemberForgetPasswordActivity;
 import qlsl.androiddesign.activity.commonactivity.MemberLoginActivity;
 import qlsl.androiddesign.activity.commonactivity.MemberRegistActivity;
 import qlsl.androiddesign.adapter.commonadapter.ForeignLoginGridAdapter;
-import qlsl.androiddesign.http.service.commonservice.MemberService;
-import qlsl.androiddesign.util.commonutil.InputMatch;
-import qlsl.androiddesign.util.commonutil.LoginUtils;
 import qlsl.androiddesign.view.baseview.FunctionView;
 
 public class MemberLoginView extends FunctionView<MemberLoginActivity>implements OnItemClickListener {
@@ -139,7 +135,8 @@ public class MemberLoginView extends FunctionView<MemberLoginActivity>implements
 	}
 
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		LoginUtils.openOauthVerify(activity, position, 0);
+//		LoginUtils.openOauthVerify(activity, position, 0);
+		showToast("请填写相关账号");
 	}
 
 }
