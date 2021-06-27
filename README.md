@@ -1,10 +1,10 @@
-AndroidSoftwareDesign框架说明：
+AndroidDesign框架说明：
 
 1.框架版权
 
   (1)所有者：ylq
 
-  (2)名称：AndroidSoftwareDesign
+  (2)名称：AndroidDesign
 
   (3)完成时间：2014-12-30
 
