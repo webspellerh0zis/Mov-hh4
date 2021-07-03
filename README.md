@@ -2,7 +2,7 @@ AndroidDesign框架说明：
 
 1.框架版权
 
-  (1)所有者：ylq
+  (1)所有者：qlslylq
 
   (2)名称：AndroidDesign
 
