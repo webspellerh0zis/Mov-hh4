@@ -12,6 +12,8 @@ import android.view.MotionEvent;
  */
 public class StaticViewPager extends ViewPager {
 
+	private boolean canScroll = false;
+
 	public StaticViewPager(Context context) {
 		super(context);
 	}
@@ -20,12 +22,22 @@ public class StaticViewPager extends ViewPager {
 		super(context, attrs);
 	}
 
+	public void setCanScroll(boolean canScroll) {
+		this.canScroll = canScroll;
+	}
+
 	@SuppressLint("ClickableViewAccessibility")
 	public boolean onTouchEvent(MotionEvent arg0) {
+		if (canScroll) {
+			return super.onTouchEvent(arg0);
+		}
 		return false;
 	}
 
 	public boolean onInterceptTouchEvent(MotionEvent arg0) {
+		if (canScroll) {
+			return super.onInterceptTouchEvent(arg0);
+		}
 		return false;
 	}
 }

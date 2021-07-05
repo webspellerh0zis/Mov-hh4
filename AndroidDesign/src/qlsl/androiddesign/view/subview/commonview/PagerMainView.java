@@ -13,7 +13,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
@@ -33,12 +32,13 @@ import qlsl.androiddesign.fragment.commonfragment.PagerMainFragment;
 import qlsl.androiddesign.fragment.commonfragment.TabFragment;
 import qlsl.androiddesign.method.BaseMethod;
 import qlsl.androiddesign.view.baseview.FunctionView;
+import qlsl.androiddesign.view.commonview.StaticViewPager;
 import qlsl.androiddesign.view.rippleview.Titanic;
 import qlsl.androiddesign.view.rippleview.TitanicTextView;
 
 public class PagerMainView extends FunctionView<MainActivity> {
 
-	private ViewPager viewPager;
+	private StaticViewPager viewPager;
 
 	private ViewGroup tabParent;
 
@@ -56,7 +56,7 @@ public class PagerMainView extends FunctionView<MainActivity> {
 		onTabChanged(index);
 		resumeTabView(index);
 	}
-	
+
 	public void onPause() {
 		int index = viewPager.getCurrentItem();
 		TabFragment fragment = (TabFragment) list.get(index);
@@ -161,6 +161,12 @@ public class PagerMainView extends FunctionView<MainActivity> {
 		TabFragment fragment = (TabFragment) list.get(index);
 		if (fragment.getFunctionView() != null) {
 			fragment.onTabResume();
+		}
+
+		if (index == -1) {
+			viewPager.setCanScroll(false);
+		} else {
+			viewPager.setCanScroll(true);
 		}
 	}
 
