@@ -1,121 +1,75 @@
-AndroidDesign框架说明：
+一.AndroidDesign框架特点：
 
-1.框架版权
+自动化高，层级分明；窗口职责化，查错效率高；各级结构标准化，混乱代码易优化；勿须重构智能化，各司其职模块化。
 
-  (1)所有者：qlslylq
+二.AndroidDesign框架包含的主要模块
 
-  (2)名称：AndroidDesign
+1.中转站(网络+数据库+其它)
+  
+  框架核心模块，重要级别为最高。外异内同方式搭建。自动输出网络信息[url,param,status]到手机日志，点击url可查看原Json数据，点击Json中的url[如图片链接]即可查看原图。错误自动定位[错误信息自动定位到异常窗口-->异常网络method并输出]。
 
-  (3)完成时间：2014-12-30
+2.标题栏函数化
 
-  (4)框架类型：Android平台的普通软件框架类型
+  使用静态布局[仅编辑内容栏]+动态布局[核心]方式搭建。框架自动注入标题栏与进度栏，免include引用。
 
-  (5)框架版本：1.0
+3.中转站进度条自动化
 
-  (6)版权说明：未经同意,不得上传,收藏,转载及使用
+  中转站自动处理进度[网络进度，数据库进度，耗时进度]的显示与隐藏。也可手动控制，适合在网络子层首句重置进度文本。
 
-  (7)目标：清晰(对内代码整洁)，公开，透明（使用日志记录方式对它人公开）
+  eg.[**Service:query**:functionView.setProgressBar("正在查询圈子")]。
 
-2.框架结构
+4.内容栏include公用简化
 
-  (1)界面部分：配置了包含顶端ActionBar,底端Tab,左右侧滑菜单的统一修改接口：BasicSettingConstant
+  常用的AdapterView布局，刷新布局，空间布局，分界线布局，搜索布局，组合布局等均公用化，并以common_***.xml规范命名。
 
-  (2)功能部分：包含Http连接,OrmLite数据库,网络图片异步加载
+5.ids文件公用化常用id
 
-3.包名说明
+  重用需要自动化控制的id,常用的id。包含框架所需的id。
 
-  (1)应用程序包名(Application Package)与启动Activity的文件夹名不同。
+6.值(尺寸，颜色)级别公用化
 
-  (2)Application Package冲突的修改：Android tools-->Rename Application Package
+  颜色值与尺寸值统一到独立文件中修改。具体布局中不出现具体的颜色值，尺寸值。设计图初始分析各值，统一修改，清晰呈现资源。
 
-  (3)个人项目的Application Package命名规则：com.qlsl.androiddesign.appname
+7.事件处理逐层化
 
-  (4)公司项目的Application Package命名规则：com.companyname.androiddesign.appname
+  中转站事件：聚合分发式。先统一聚合到中转站按照不同状态预处理，之后分发到子窗口Activity或子碎片窗口Fragment中。按需实现。不实现时由(碎片)窗口上层默认处理(Toast显示数据或定位错误)。
 
-  (5)工程外来包说明：已经配置以下包的drawable，selector，layout，anim，shape，theme，attr,id等文件到工程中
+  窗口事件：由窗口自动传递到functionView中。选择性分发到functionView,adapter,listener中职责化处理，最大程度减少窗口冗余。
 
-     包qlsl.androiddesign.pulltorefresh       ：下拉刷新和上拉加载更多专属包
+8.上下拉刷新分页
 
-     包qlsl.androiddesign.view.electricview   ：闪电控件专属包       包含raw中的音乐文件electric.mp3
+  框架集成了开源的PullToRefresh源码。修缮了分页显示问题。刷新头尾智能化提示页数信息。增加了左滑删除控件的刷新分页。增加了获取两种adapter的函数[分别用于通知刷新数据与获取item数据]。
 
-     包qlsl.androiddesign.view.indicatorview  ：自动轮播图控件专属包
+9.异步图片加载
 
-     包qlsl.androiddesign.view.rippleview     ：波纹文本控件专属包   包含assets中的字体库文件Satisfy-Regular.ttf
+  使用免配置的Picasso库。公用工具包ImageUtils类中封装了使用Picasso加载矩形，圆角，圆形等图片的重载函数。工具包中也包含了TimeFormatUtils[时间友好化工具]等等种种实用的工具。
 
-4.环境说明
+10.对象关系映射
 
-  (1) API：基于Android 4.2.2
+  框架使用ormlite对象关系映射框架。分别用dao包，daoimpl包，db包，table包来深化sqlite的层级结构。并包含示范写法。basetable包一般装入需要与后台同步数据的表实体。
 
-  (2) 编码：utf-8
+11.登录过程安全认证
 
-  (3) 平台：Windows开发，Android手机APP
+  当使用session+token方式开发登录模块时，需配合MemberService,UserMethod与BaseService中的数据失效处理协作开发。
 
-5.代码规范
+12.错误处理
 
-  (1)新加的Activity: 放在subactivity包下,继承自baseactivity包的BaseActivity
+  使用后台发送邮件方式通知错误。handler包CrashHandler类中发送邮件函数中，可以配置多个接收者邮箱。日志管理中可以配置邮箱并发送完整日志。  
 
-  (2)新加的Activity界面：放在subview包下,继承自baseview的FunctionView
+13.json解析
 
-  (3)新加的工具类：放在otherutil包下
+  使用FastJson解析接口数据。引用的FastJson库是修缮过源码的库。主要是当解析时在FastJson层将null容器转为了非null的0大小容器。避免解析后容器null判断的烦扰操作，以应对C#作后台时将Json数据转为字符串时不方便根据数据类型进行配置的问题。
 
-  (4)新加的selector,shape的xml文件：放在res/drawable包下
+14.adapter处理逐层化
 
-  (5)Activity的命名：加后缀Activity
+  上层adapter充分分担子adapter共有的处理。使子adapter仅需重写getView函数。并进一步将ViewHolder机制简化，减少适配层冗余。
 
-  (6)布局文件的命名：加前缀activity_
+15.界面配置
 
-  (7)MVC控件的itemview布局文件的命名：加前缀mvcitem_  如：listitem_setting.xml  griditem_basic_setting.xml
+  在不修改代码的前提下，支持在软件内部通过系统菜单键进入基本设置页面中重新配置界面。配置对应constant包BasicSettingConstant类。配置包括：是否显示左，右侧滑菜单；是否显示顶部，底部导航栏；是否显示通知栏，系统标题栏；屏幕方向是否固定为竖直等等。
 
-  (8)selector的命名：按钮加前缀：btn_ 
+16.调试模式配置
 
-  (9)shape的命名：加前缀shape_
+   软件中间出现的蜜蜂图标为调试所用，调试模式下可见，为可滑动的悬浮窗，包含日志，内存，进程三大调试模块。在公用工具包Log类中统一配置应用程序的调试/上线模式，手机/控制台模式。Log类使用开源Log4j库将日志持久化输出到本地文件，并在手机中即时显示。各种状态使用不同的颜色。如日志中出现了红色段落则代表程序出现了异常。此时，测试人员或其他持有终端的人员可以将完整日志发送到任意指定的邮箱。进程列表通过listitem上下文菜单可进入进程详情。
 
-  (10)控件id及控件变量的命名：
-
-      若为公用id，则直接引用ids.xml文件中的id
-
-      根布局(ViewGroup)加前缀viewgroup_
-
-      TextView加前缀tv_
-
-      Button加前缀btn_
-
-      EditText加前缀et_
-
-      ImageButton加前缀btn_
-
-      ImageView加前缀iv_
-
-      ListView加前缀listview_
-
-      GridView加前缀gridview_
-
-      无同类结构则去掉前缀
-
-  (11)非控件变量的命名
-
-      List加前缀list_
-
-      BaseAdapter加前缀adapter_
-
-      无同类结构则去掉前缀
-
-  (12)控件的监听
-
-      View点击事件类型推荐方式：
-
-          控件中加上属性：onClick="onClick"   函数名须为onClick，不能更改
-
-          FunctionView的子类中实现onClick函数
-
-          BaseActivity中无需定义onClick函数，框架会自动调用
-
-      View其他事件类型推荐方式：
-
-          实现FunctionView子类中的initListener
-     
-  (13)警告处理
-
-         不能留有警告,必须予以解决
-
-  (14)框架结构一直在变动中，以具体框架为准
+  除了可见的蜜蜂调试外，另包括默认不可见的控件调试模块。控件调试暂兼容TextView，Button与EditText，需要使用commonview中对应的自定义widget控件。通过长按某个控件弹出控件调试窗，可查看和实时改变当前的尺寸和颜色，以方便设计人员检查，修改和实时查看效果。后期会细化此调试功能，如手机端建立自己的颜色，尺寸库；修改之后保存本地并将要改的控件尺寸颜色和改变成的尺寸颜色发送给开发者修改等等。
