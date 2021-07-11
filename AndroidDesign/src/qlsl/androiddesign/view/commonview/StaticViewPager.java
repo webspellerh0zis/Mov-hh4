@@ -12,7 +12,7 @@ import android.view.MotionEvent;
  */
 public class StaticViewPager extends ViewPager {
 
-	private boolean canScroll = false;
+	private boolean canScroll = false;  
 
 	public StaticViewPager(Context context) {
 		super(context);

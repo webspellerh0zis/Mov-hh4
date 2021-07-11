@@ -163,7 +163,7 @@ public class PagerMainView extends FunctionView<MainActivity> {
 			fragment.onTabResume();
 		}
 
-		if (index == -1) {
+		if (index == -1) {  
 			viewPager.setCanScroll(false);
 		} else {
 			viewPager.setCanScroll(true);
