@@ -66,14 +66,13 @@ public class VersionView extends FunctionView<VersionActivity> {
 				activity.getPackageName(),
 				AppUtils.getVersionCode(activity),
 				AppUtils.getVersionName(activity),
-				"qlsl",
-				"LuoYong",
-				"XiaoPeiXian,qlsl",
-				"2015-09-11——2015-10-17",
-				"2015-10-17",
-				"1:去除了作业模块\n2:消息,学习笺模块优化升级\n3:增加了开启艺术字与语音播放的设置",
-				"下一版本需要进一步优化的模块:\n1:消息轮询方案\n2:信息顺序上传改并发上传以提高速度\n3:框架层自动处理文件压缩\n4:艺术字的下载,切换与输入切换",
-				"13.5MB" };
+				"qlslylq",
+				"qlslylq",
+				"qlslylq",
+				"2014-12-30——2016-07-03",
+				"2016-07-03",
+				"初始上传",
+				"16.1MB" };
 		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
 		for (int index = 0; index < names.length; index++) {
 			HashMap<String, Object> map = new HashMap<String, Object>();
