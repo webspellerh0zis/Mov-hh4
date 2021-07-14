@@ -200,10 +200,10 @@ public class Log {
 	 * 这个入口不对用户提供，只对运营，测试及开发者提供<br/>
 	 * 需要主动告知运营及测试打开软件调试模式的密码<br/>
 	 * 以在查看日志过程中发现软件的bug<br/>
-	 * 默认的打开调试模式密码为teemax5201314<br/>
+	 * 默认的打开调试模式密码为qlslylq<br/>
 	 */
 	public static void checkDebugModel(BaseActivity activity, String password) {
-		if (password.equals("teemax5201314")) {
+		if (password.equals("qlslylq")) {
 			if (!isDebug) {
 				setDebugModel(activity);
 				if (isDebug) {
