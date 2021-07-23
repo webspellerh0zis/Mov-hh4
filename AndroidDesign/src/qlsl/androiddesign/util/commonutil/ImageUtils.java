@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.widget.ImageView;
 import qlsl.androiddesign.transformation.CircleTransformation;
 import qlsl.androiddesign.transformation.RoundTransformation;
+import qlsl.androiddesign.transformation.TopRoundTransformation;
 
 /**
  * 加载模式为fitCenter或fitXY,fitCenter常出现错一乱多局面<br/>
@@ -86,6 +87,15 @@ public class ImageUtils {
 	 */
 	public static void round(Context context, String thumbUrl, ImageView imageView) {
 		Picasso.with(context).load(convertThumbUrl(thumbUrl)).fit().transform(new RoundTransformation())
+				.placeholder(R.drawable.iv_default).error(R.drawable.iv_default).into(imageView);
+		config(context);
+	}
+
+	/**
+	 * 顶部圆角[fitXY]<br/>
+	 */
+	public static void roundTop(Context context, String thumbUrl, ImageView imageView) {
+		Picasso.with(context).load(convertThumbUrl(thumbUrl)).fit().transform(new TopRoundTransformation())
 				.placeholder(R.drawable.iv_default).error(R.drawable.iv_default).into(imageView);
 		config(context);
 	}

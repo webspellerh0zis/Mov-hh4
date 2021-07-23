@@ -146,6 +146,61 @@ public class BitmapUtils {
 	}
 
 	/**
+	 * 画一个左上，右上圆角图
+	 */
+	public static Bitmap getTopRoundedCornerBitmap(Bitmap bitmap, float roundPx) {
+		Canvas canvas = new Canvas(bitmap);
+		final int color = 0xFFF2F2F2;
+		final Paint paint = new Paint();
+		paint.setAntiAlias(true);
+		paint.setColor(color);
+		drawLiftUp(canvas, (int) roundPx, bitmap.getWidth(), bitmap.getHeight(), paint);
+		drawRightUp(canvas, (int) roundPx, bitmap.getWidth(), bitmap.getHeight(), paint);
+		canvas.drawBitmap(bitmap, 0, 0, paint);
+		return bitmap;
+	}
+
+	private static void drawLiftUp(Canvas canvas, int roundPx, int w, int h, Paint paint) {
+		Path path = new Path();
+		path.moveTo(0, roundPx);
+		path.lineTo(0, 0);
+		path.lineTo(roundPx, 0);
+		path.arcTo(new RectF(0, 0, roundPx * 2, roundPx * 2), -90, -90);
+		path.close();
+		canvas.drawPath(path, paint);
+	}
+
+	private static void drawLiftDown(Canvas canvas, int roundPx, int w, int h, Paint paint) {
+		Path path = new Path();
+		path.moveTo(0, h - roundPx);
+		path.lineTo(0, h);
+		path.lineTo(roundPx, h);
+		path.arcTo(new RectF(0, h - roundPx * 2, 0 + roundPx * 2, h), 90, 90);
+		path.close();
+		canvas.drawPath(path, paint);
+	}
+
+	private static void drawRightDown(Canvas canvas, int roundPx, int w, int h, Paint paint) {
+		Path path = new Path();
+		path.moveTo(w - roundPx, h);
+		path.lineTo(w, h);
+		path.lineTo(w, h - roundPx);
+		path.arcTo(new RectF(w - roundPx * 2, h - roundPx * 2, w, h), 0, 90);
+		path.close();
+		canvas.drawPath(path, paint);
+	}
+
+	private static void drawRightUp(Canvas canvas, int roundPx, int w, int h, Paint paint) {
+		Path path = new Path();
+		path.moveTo(w, roundPx);
+		path.lineTo(w, 0);
+		path.lineTo(w - roundPx, 0);
+		path.arcTo(new RectF(w - roundPx * 2, 0, w, 0 + roundPx * 2), -90, 90);
+		path.close();
+		canvas.drawPath(path, paint);
+	}
+
+	/**
 	 * 画一个缺省头像圆角图
 	 * 
 	 * @param bitmap
