@@ -65,24 +65,27 @@ public class ColorUtils {
 	 * 无法识别则返回-1<br/>
 	 */
 	public static int parseColor(String colorString) {
-		int length = colorString.length();
-		if (length > 2) {
-			if (colorString.charAt(0) == '#') {
-				// Use a long to avoid rollovers on #ffXXXXXX
-				long color = Long.parseLong(colorString.substring(1), 16);
-				if (length == 7) {
-					// Set the alpha value
-					color |= 0x00000000ff000000;
-				} else if (length != 9) {
-					return -1;
-				}
-				return (int) color;
-			} else {
-				Integer color = sColorNameMap.get(colorString.toLowerCase(Locale.ROOT));
-				if (color != null) {
-					return color;
+		try {
+			int length = colorString.length();
+			if (length > 2) {
+				if (colorString.charAt(0) == '#') {
+					// Use a long to avoid rollovers on #ffXXXXXX
+					long color = Long.parseLong(colorString.substring(1), 16);
+					if (length == 7) {
+						// Set the alpha value
+						color |= 0x00000000ff000000;
+					} else if (length != 9) {
+						return -1;
+					}
+					return (int) color;
+				} else {
+					Integer color = sColorNameMap.get(colorString.toLowerCase(Locale.ROOT));
+					if (color != null) {
+						return color;
+					}
 				}
 			}
+		} catch (Exception e) {
 		}
 		return -1;
 	}
