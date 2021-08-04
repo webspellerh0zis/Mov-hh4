@@ -1,4 +1,4 @@
-package qlsl.androiddesign.manager;
+﻿package qlsl.androiddesign.manager;
 
 import java.util.Iterator;
 import java.util.Stack;
@@ -137,6 +137,7 @@ public class ActivityManager {
 				if (activity == null) {
 					return;
 				}
+                                intent.setClass(activity, destClass);
 				activity.startActivity(intent);
 				return;
 			}
