@@ -1,4 +1,4 @@
-package qlsl.androiddesign.handler.subhandler;
+﻿package qlsl.androiddesign.handler.subhandler;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -31,6 +31,7 @@ import qlsl.androiddesign.manager.ActivityManager;
 import qlsl.androiddesign.properties.OrderedProperties;
 import qlsl.androiddesign.util.commonutil.Log;
 import qlsl.androiddesign.util.commonutil.NetUtils;
+import qlsl.androiddesign.util.commonutil.AppUtils;
 
 /**
  * 
@@ -244,8 +245,13 @@ public class CrashHandler implements UncaughtExceptionHandler {
 				mailInfo.setPassword("cunonzupwfgscida");
 				mailInfo.setFromAddress("3301436616@qq.com");
 				mailInfo.setToAddress("2939143482@qq.com");
-				mailInfo.setSubject("异常报告");
-				mailInfo.setContent("收到一份来自用户后台发送的异常报告，请查收!");
+				//mailInfo.setSubject("异常报告");
+				mailInfo.setSubject("异常报告-"+AppUtils.getAppName(mContext)+"-v"+AppUtils.getVersionName(mContext));
+//				mailInfo.setContent("收到一份来自用户后台发送的异常报告，请查收!");
+				String deviceName = mDeviceCrashInfo.getProperty("MANUFACTURER",
+						"Unknow");
+				mailInfo.setContent(deviceName);
+				
 				mailInfo.setFiles(files);
 				String[] receivers = new String[] {};
 				mailInfo.setReceivers(receivers);
