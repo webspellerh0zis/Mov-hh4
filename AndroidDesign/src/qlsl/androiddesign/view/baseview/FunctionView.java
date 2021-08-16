@@ -29,6 +29,7 @@ import qlsl.androiddesign.activity.commonactivity.MemberRegistActivity;
 import qlsl.androiddesign.activity.commonactivity.TestActivity;
 import qlsl.androiddesign.service.baseservice.BaseService;
 import qlsl.androiddesign.util.commonutil.DensityUtils;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * FunctionView子类的基类<br/>
@@ -545,19 +546,18 @@ public abstract class FunctionView<T extends BaseActivity> extends
 
         /**
 	 * 查找指定序号的同名id控件<br/>
-	 * 
+	 * 序号从1开始<br/>
 	 */
-        public <V extends View> V findViewById(int id, int order) {
-		return findViewById(view, id, order, 0);
+	public <V extends View> V findViewById(int id, int order) {
+		return findViewById(view, id, order, new AtomicInteger(0));
 	}
 
 	@SuppressWarnings("unchecked")
-	private <V extends View> V findViewById(ViewGroup rootGroup, int id, int order, int order_num) {
+	private <V extends View> V findViewById(ViewGroup rootGroup, int id, int order, AtomicInteger order_num) {
 		for (int childIndex = 0, childCount = rootGroup.getChildCount(); childIndex < childCount; childIndex++) {
 			View childView = rootGroup.getChildAt(childIndex);
 			if (childView.getId() == id) {
-				order_num++;
-				if (order_num == order) {
+				if (order_num.incrementAndGet() == order) {
 					return (V) childView;
 				}
 			}
