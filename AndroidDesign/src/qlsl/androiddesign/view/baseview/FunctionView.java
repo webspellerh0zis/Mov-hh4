@@ -1,4 +1,4 @@
-package qlsl.androiddesign.view.baseview;
+﻿package qlsl.androiddesign.view.baseview;
 
 import java.io.File;
 
@@ -541,6 +541,36 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	public <V extends View> V findViewById(int id) {
 		V currentView = (V) view.findViewById(id);
 		return currentView;
+	}
+
+        /**
+	 * 查找指定序号的同名id控件<br/>
+	 * 
+	 */
+        public <V extends View> V findViewById(int id, int order) {
+		return findViewById(view, id, order, 0);
+	}
+
+	@SuppressWarnings("unchecked")
+	private <V extends View> V findViewById(ViewGroup rootGroup, int id, int order, int order_num) {
+		for (int childIndex = 0, childCount = rootGroup.getChildCount(); childIndex < childCount; childIndex++) {
+			View childView = rootGroup.getChildAt(childIndex);
+			if (childView.getId() == id) {
+				order_num++;
+				if (order_num == order) {
+					return (V) childView;
+				}
+			}
+			if (childView instanceof ViewGroup) {
+				View resultView = findViewById((ViewGroup) childView, id, order, order_num);
+				if (resultView == null) {
+					continue;
+				} else {
+					return (V) resultView;
+				}
+			}
+		}
+		return null;
 	}
 
 	public void setRefresh(boolean refresh) {
