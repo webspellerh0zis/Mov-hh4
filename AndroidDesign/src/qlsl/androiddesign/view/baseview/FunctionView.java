@@ -552,6 +552,14 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		return findViewById(view, id, order, new AtomicInteger(0));
 	}
 
+        /**
+	 * 查找指定序号的同名id控件<br/>
+	 * 序号从1开始<br/>
+	 */
+	public <V extends View> V findViewById(ViewGroup rootGroup, int id, int order) {
+		return findViewById(rootGroup, id, order, new AtomicInteger(0));
+	}
+
 	@SuppressWarnings("unchecked")
 	private <V extends View> V findViewById(ViewGroup rootGroup, int id, int order, AtomicInteger order_num) {
 		for (int childIndex = 0, childCount = rootGroup.getChildCount(); childIndex < childCount; childIndex++) {
