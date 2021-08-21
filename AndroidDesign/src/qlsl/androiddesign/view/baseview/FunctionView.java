@@ -594,6 +594,10 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		return false;
 	}
 
+        public boolean isEmpty(CharSequence src) {
+		return TextUtils.isEmpty(src);
+	}
+
 	/**
 	 * 标题栏返回按钮监听类<br/>
 	 * 
