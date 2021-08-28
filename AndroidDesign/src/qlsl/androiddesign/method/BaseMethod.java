@@ -1,4 +1,4 @@
-package qlsl.androiddesign.method;
+﻿package qlsl.androiddesign.method;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -547,5 +547,25 @@ public class BaseMethod {
 		Random random = new Random();
 		int value = random.nextInt(maxValue - minValue + 1) + minValue;
 		return value;
+	}
+
+        public static String toUpperCaseForWeek(String src) {
+		String dst = null;
+		if (src.equals("1")) {
+			dst = "一";
+		} else if (src.equals("2")) {
+			dst = "二";
+		} else if (src.equals("3")) {
+			dst = "三";
+		} else if (src.equals("4")) {
+			dst = "四";
+		} else if (src.equals("5")) {
+			dst = "五";
+		} else if (src.equals("6")) {
+			dst = "六";
+		} else if (src.equals("7")) {
+			dst = "日";
+		}
+		return dst;
 	}
 }
