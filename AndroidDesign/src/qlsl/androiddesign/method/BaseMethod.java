@@ -566,6 +566,6 @@ public class BaseMethod {
 		} else if (src.equals("7")) {
 			dst = "日";
 		}
-		return dst;
+		return "星期"+dst;
 	}
 }
