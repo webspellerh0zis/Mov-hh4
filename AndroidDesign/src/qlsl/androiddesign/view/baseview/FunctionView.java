@@ -281,6 +281,9 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	public void setProgressBarText(String text) {
 		((TextView) progressBar.findViewById(R.id.tv_progressbar))
 				.setText(text);
+                if (!text.contains("正在上传")) {
+			ToolSpeechUtils.startSpeaking(text, 0);
+		}
 	}
 
 	public void resetProgressBarText() {
