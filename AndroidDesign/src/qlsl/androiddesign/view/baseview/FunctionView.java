@@ -183,8 +183,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		int dp2px = DensityUtils.dp2px(activity, 5);
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 			customTitleView.setPadding(dp2px,
-					DensityUtils.dip2px(activity, activity.getResources()
-							.getDimension(R.dimen.dimen_48_dip)), dp2px, dp2px);
+					DensityUtils.dip2px(activity, 20), dp2px, dp2px);
 		} else {
 			customTitleView.setPadding(dp2px, dp2px, dp2px, dp2px);
 		}
