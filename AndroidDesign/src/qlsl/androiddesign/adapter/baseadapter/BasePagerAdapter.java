@@ -25,8 +25,8 @@ public abstract class BasePagerAdapter<T> extends PagerAdapter {
 	 * 以应对在构造adapter后，达到某种条件时需要传值进来的情况<br/>
 	 */
 	@SuppressWarnings("hiding")
-	public <T> void transport(T... t) {
-
+	public <T> BasePagerAdapter<?> transport(T... t) {
+		return this;
 	}
 
 	public synchronized void notifyDataSetChanged() {
@@ -49,8 +49,7 @@ public abstract class BasePagerAdapter<T> extends PagerAdapter {
 	 * 获取MVC模式控件的子布局
 	 */
 	protected View getItemView(ViewGroup container, int item_resource) {
-		View convertView = activity.getLayoutInflater().inflate(item_resource,
-				null);
+		View convertView = activity.getLayoutInflater().inflate(item_resource, null);
 		container.addView(convertView);
 		return convertView;
 	}

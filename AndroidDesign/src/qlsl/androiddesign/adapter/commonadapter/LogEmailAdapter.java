@@ -25,8 +25,7 @@ public class LogEmailAdapter extends BaseAdapter<Map<String, Object>> {
 		super(activity, list);
 	}
 
-	public View getView(final int position, View convertView,
-			final ViewGroup parent) {
+	public View getView(final int position, View convertView, final ViewGroup parent) {
 		convertView = getItemView(convertView, R.layout.listitem_log_email);
 		TextView tv_name = getView(convertView, R.id.tv_name);
 		TextView tv_email = getView(convertView, R.id.tv_email);
@@ -56,9 +55,10 @@ public class LogEmailAdapter extends BaseAdapter<Map<String, Object>> {
 		return filter;
 	}
 
-	public <T> void transport(T... t) {
+	public <T> BaseAdapter<?> transport(T... t) {
 		super.transport(t);
 		et_email = (EditText) t[0];
+		return this;
 	}
 
 }

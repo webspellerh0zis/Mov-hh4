@@ -9,8 +9,7 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import qlsl.androiddesign.activity.baseactivity.BaseActivity;
 
-public abstract class BaseExpandableListAdapter extends
-		android.widget.BaseExpandableListAdapter {
+public abstract class BaseExpandableListAdapter extends android.widget.BaseExpandableListAdapter {
 
 	protected BaseActivity activity;
 
@@ -20,10 +19,8 @@ public abstract class BaseExpandableListAdapter extends
 
 	private List<? extends List<? extends Map<String, ?>>> childList;
 
-	public BaseExpandableListAdapter(BaseActivity activity,
-			ExpandableListView listView,
-			List<? extends Map<String, ?>> groupList,
-			List<? extends List<? extends Map<String, ?>>> childList) {
+	public BaseExpandableListAdapter(BaseActivity activity, ExpandableListView listView,
+			List<? extends Map<String, ?>> groupList, List<? extends List<? extends Map<String, ?>>> childList) {
 		this.activity = activity;
 		this.listView = listView;
 		this.groupList = groupList;
@@ -34,8 +31,8 @@ public abstract class BaseExpandableListAdapter extends
 	 * 外部类可通过此函数传递对象进来<br/>
 	 * 以应对在构造adapter后，达到某种条件时需要传值进来的情况<br/>
 	 */
-	public <T> void transport(T... t) {
-
+	public <T> qlsl.androiddesign.adapter.baseadapter.BaseExpandableListAdapter transport(T... t) {
+		return this;
 	}
 
 	public synchronized void notifyDataSetChanged() {
@@ -88,8 +85,7 @@ public abstract class BaseExpandableListAdapter extends
 	 */
 	protected View getItemView(View convertView, int item_resource) {
 		if (convertView == null) {
-			convertView = activity.getLayoutInflater().inflate(item_resource,
-					null);
+			convertView = activity.getLayoutInflater().inflate(item_resource, null);
 		}
 		return convertView;
 	}

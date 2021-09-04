@@ -1,6 +1,7 @@
 ﻿package qlsl.androiddesign.view.baseview;
 
 import java.io.File;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import com.qlsl.androiddesign.appname.R;
 
@@ -14,6 +15,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -29,7 +31,7 @@ import qlsl.androiddesign.activity.commonactivity.MemberRegistActivity;
 import qlsl.androiddesign.activity.commonactivity.TestActivity;
 import qlsl.androiddesign.service.baseservice.BaseService;
 import qlsl.androiddesign.util.commonutil.DensityUtils;
-import java.util.concurrent.atomic.AtomicInteger;
+import qlsl.androiddesign.util.singleton.ToolSpeechUtils;
 
 /**
  * FunctionView子类的基类<br/>
@@ -47,8 +49,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 当BaseActivity或BaseFragment中的对应周期函数隐性触发时调用<br/>
  * 
  */
-public abstract class FunctionView<T extends BaseActivity> extends
-		AbFunctionView<T> implements DialogInterface.OnClickListener {
+public abstract class FunctionView<T extends BaseActivity> extends AbFunctionView<T>
+		implements DialogInterface.OnClickListener {
 
 	/**
 	 * 标题栏公用标题控件
@@ -73,8 +75,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 设置所有BaseActivity子类的根布局为layout中的common_root.xml布局文件<br/>
 	 */
 	private void setRootView() {
-		view = (ViewGroup) activity.getLayoutInflater().inflate(
-				R.layout.common_root_fit, null);
+		view = (ViewGroup) activity.getLayoutInflater().inflate(R.layout.common_root_fit, null);
 		activity.setContentView(view);
 	}
 
@@ -84,8 +85,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	public void setContentView(int resource) {
 		setRootView();
 		View contentView = activity.getLayoutInflater().inflate(resource, null);
-		((ViewGroup) view.findViewById(R.id.viewgroup_common_content)).addView(
-				contentView, getLayoutParams());
+		((ViewGroup) view.findViewById(R.id.viewgroup_common_content)).addView(contentView, getLayoutParams());
 		init("activity");
 	}
 
@@ -95,14 +95,13 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 */
 	public void setContentView(ViewGroup rootView, ViewGroup contentView) {
 		view = rootView;
-		((ViewGroup) view.findViewById(R.id.viewgroup_common_content)).addView(
-				contentView, getLayoutParams());
+		((ViewGroup) view.findViewById(R.id.viewgroup_common_content)).addView(contentView, getLayoutParams());
 		init("fragment");
 	}
 
 	private LayoutParams getLayoutParams() {
-		FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
-				LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+		FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(LayoutParams.MATCH_PARENT,
+				LayoutParams.MATCH_PARENT);
 		return params;
 	}
 
@@ -155,8 +154,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 显示标题栏<br/>
 	 */
 	public void showTitleBar() {
-		view.findViewById(R.id.viewgroup_common_title).setVisibility(
-				View.VISIBLE);
+		view.findViewById(R.id.viewgroup_common_title).setVisibility(View.VISIBLE);
 	}
 
 	/**
@@ -182,8 +180,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		View customTitleView = findViewById(R.id.customTitleView);
 		int dp2px = DensityUtils.dp2px(activity, 5);
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-			customTitleView.setPadding(dp2px,
-					DensityUtils.dip2px(activity, 20), dp2px, dp2px);
+			customTitleView.setPadding(dp2px, DensityUtils.dip2px(activity, 20), dp2px, dp2px);
 		} else {
 			customTitleView.setPadding(dp2px, dp2px, dp2px, dp2px);
 		}
@@ -216,25 +213,16 @@ public abstract class FunctionView<T extends BaseActivity> extends
 
 	@SuppressLint("InlinedApi")
 	private void hideSystemUI() {
-		activity.getWindow()
-				.getDecorView()
-				.setSystemUiVisibility(
-						View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-								| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-								| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-								| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-								| View.SYSTEM_UI_FLAG_FULLSCREEN
-								| View.SYSTEM_UI_FLAG_IMMERSIVE);
+		activity.getWindow().getDecorView()
+				.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+						| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+						| View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE);
 	}
 
 	@SuppressLint("InlinedApi")
 	private void showSystemUI() {
-		activity.getWindow()
-				.getDecorView()
-				.setSystemUiVisibility(
-						View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-								| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-								| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+		activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+				| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 	}
 
 	/**
@@ -268,27 +256,23 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	}
 
 	public void setContentBarBackgroundResource(int resid) {
-		view.findViewById(R.id.viewgroup_common_content).setBackgroundResource(
-				resid);
+		view.findViewById(R.id.viewgroup_common_content).setBackgroundResource(resid);
 	}
 
 	public void setContentBarBackgroundColor(int color) {
-		view.findViewById(R.id.viewgroup_common_content).setBackgroundColor(
-				color);
+		view.findViewById(R.id.viewgroup_common_content).setBackgroundColor(color);
 	}
 
 	public void setProgressBarText(String text) {
-		((TextView) progressBar.findViewById(R.id.tv_progressbar))
-				.setText(text);
-                if (!text.contains("正在上传")) {
+		((TextView) progressBar.findViewById(R.id.tv_progressbar)).setText(text);
+		if (!text.contains("正在上传")) {
 			ToolSpeechUtils.startSpeaking(text, 0);
 		}
 	}
 
 	public void resetProgressBarText() {
 		((TextView) progressBar.findViewById(R.id.tv_progressbar))
-				.setText(activity.getResources().getString(
-						R.string.progressbar_text));
+				.setText(activity.getResources().getString(R.string.progressbar_text));
 	}
 
 	/**
@@ -302,8 +286,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 设置标题栏返回按钮的文本
 	 */
 	public void setBackButtonText(String text) {
-		btn_back.setBackgroundColor(activity.getResources().getColor(
-				R.color.transparent));
+		btn_back.setBackgroundColor(activity.getResources().getColor(R.color.transparent));
 		btn_back.setText(text);
 	}
 
@@ -318,8 +301,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 设置标题栏右边按钮的文本
 	 */
 	public void setRightButtonText(String text) {
-		btn_right.setBackgroundColor(activity.getResources().getColor(
-				R.color.transparent));
+		btn_right.setBackgroundColor(activity.getResources().getColor(R.color.transparent));
 		btn_right.setText(text);
 	}
 
@@ -327,20 +309,17 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 设置标题栏右边按钮的文本和图片
 	 */
 	public void setRightButtonText(String text, int leftResid) {
-		btn_right.setBackgroundColor(activity.getResources().getColor(
-				R.color.transparent));
+		btn_right.setBackgroundColor(activity.getResources().getColor(R.color.transparent));
 		btn_right.setText(text);
 		Drawable leftDrawable = activity.getResources().getDrawable(leftResid);
-		btn_right.setCompoundDrawablesWithIntrinsicBounds(leftDrawable, null,
-				null, null);
+		btn_right.setCompoundDrawablesWithIntrinsicBounds(leftDrawable, null, null, null);
 	}
 
 	/**
 	 * 在标题栏右边按钮左边再加上一个图片控件
 	 */
 	public void addBorderView(int resid) {
-		View view_border = activity.getLayoutInflater().inflate(
-				R.layout.imageview_border, null);
+		View view_border = activity.getLayoutInflater().inflate(R.layout.imageview_border, null);
 		view_border.setBackgroundResource(resid);
 		ViewGroup titleView = (ViewGroup) view.findViewById(R.id.title_view);
 		titleView.addView(view_border, titleView.getChildCount() - 1);
@@ -350,8 +329,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 在标题栏右边文本控件左边再加上一个文本控件
 	 */
 	public void addBorderView(String text) {
-		View view_border = activity.getLayoutInflater().inflate(
-				R.layout.textview_border, null);
+		View view_border = activity.getLayoutInflater().inflate(R.layout.textview_border, null);
 		((TextView) view_border.findViewById(R.id.iv_border)).setText(text);
 		ViewGroup titleView = (ViewGroup) view.findViewById(R.id.title_view);
 		titleView.addView(view_border, titleView.getChildCount() - 1);
@@ -361,8 +339,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 获取内容栏根布局<br/>
 	 */
 	public ViewGroup getContentView() {
-		ViewGroup parent = (ViewGroup) view
-				.findViewById(R.id.viewgroup_common_content);
+		ViewGroup parent = (ViewGroup) view.findViewById(R.id.viewgroup_common_content);
 		return (ViewGroup) parent.getChildAt(1);
 	}
 
@@ -425,8 +402,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 */
 	public void showSoftInput(EditText et_target) {
 		et_target.requestFocus();
-		InputMethodManager imm = (InputMethodManager) activity
-				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
 		imm.showSoftInput(et_target, 0);
 	}
 
@@ -434,11 +410,9 @@ public abstract class FunctionView<T extends BaseActivity> extends
 	 * 隐藏输入法<br/>
 	 */
 	public void hideSoftInput() {
-		InputMethodManager imm = (InputMethodManager) activity
-				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		InputMethodManager imm = (InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE);
 		if (activity.getCurrentFocus() != null) {
-			imm.hideSoftInputFromWindow(activity.getCurrentFocus()
-					.getWindowToken(), 0);
+			imm.hideSoftInputFromWindow(activity.getCurrentFocus().getWindowToken(), 0);
 		}
 	}
 
@@ -463,8 +437,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 
 	}
 
-	public void startActivity(Class<? extends Activity> destClass,
-			int enterAnim, int exitAnim) {
+	public void startActivity(Class<? extends Activity> destClass, int enterAnim, int exitAnim) {
 		activity.startActivity(destClass, enterAnim, exitAnim);
 
 	}
@@ -474,8 +447,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 
 	}
 
-	public void startActivityForResult(Class<? extends Activity> destClass,
-			int requestCode) {
+	public void startActivityForResult(Class<? extends Activity> destClass, int requestCode) {
 		activity.startActivityForResult(destClass, requestCode);
 
 	}
@@ -535,8 +507,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		activity.cropPhoto(path);
 	}
 
-	public void cropPhoto(String path, int aspectX, int aspectY, int outputX,
-			int outputY) {
+	public void cropPhoto(String path, int aspectX, int aspectY, int outputX, int outputY) {
 		activity.cropPhoto(path, aspectX, aspectY, outputX, outputY);
 	}
 
@@ -546,7 +517,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		return currentView;
 	}
 
-        /**
+	/**
 	 * 查找指定序号的同名id控件<br/>
 	 * 序号从1开始<br/>
 	 */
@@ -554,7 +525,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		return findViewById(view, id, order, new AtomicInteger(0));
 	}
 
-        /**
+	/**
 	 * 查找指定序号的同名id控件<br/>
 	 * 序号从1开始<br/>
 	 */
@@ -596,7 +567,7 @@ public abstract class FunctionView<T extends BaseActivity> extends
 		return false;
 	}
 
-        public boolean isEmpty(CharSequence src) {
+	public boolean isEmpty(CharSequence src) {
 		return TextUtils.isEmpty(src);
 	}
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_instance.xml" />
+        <ignore path="res/layout/listitem_setting.xml" />
+        <ignore path="res/layout/pull_to_refresh_header_horizontal.xml" />
+        <ignore path="res/layout/tab1_indicator.xml" />
+        <ignore path="res/layout/tab2_indicator.xml" />
+        <ignore path="res/layout/tab3_indicator.xml" />
+        <ignore path="res/layout/tab4_indicator.xml" />
+        <ignore path="res/layout/tab5_indicator.xml" />
+    </issue>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_setting.xml" />
+        <ignore path="res/layout/basic_setting_title_bar.xml" />
+        <ignore path="res/layout/common_progressbar.xml" />
+        <ignore path="res/layout/launcher_pull_door_view.xml" />
+        <ignore path="res/layout/tab1.xml" />
+    </issue>
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/popup_horizontal.xml" />
+        <ignore path="res/layout/popup_vertical.xml" />
+    </issue>
+    <issue id="PxUsage">
+        <ignore path="res/layout/common_progressbar.xml" />
+        <ignore path="res/layout/horiz_separator.xml" />
+    </issue>
+    <issue id="ScrollViewSize">
+        <ignore path="res/layout/popup_horizontal.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/basic_setting_title_bar.xml" />
+        <ignore path="res/layout/log_setting_title_bar.xml" />
+    </issue>
+</lint>

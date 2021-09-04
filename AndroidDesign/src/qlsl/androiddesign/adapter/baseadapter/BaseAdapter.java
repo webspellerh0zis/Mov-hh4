@@ -13,8 +13,7 @@ import qlsl.androiddesign.activity.baseactivity.BaseActivity;
  * 一：统一实现BaseAdapter子类的某些需实现函数<br/>
  * 二：封装BaseAdapter的子布局设置功能，ViewHolder缓存功能<br/>
  */
-public abstract class BaseAdapter<T> extends android.widget.BaseAdapter
-		implements Filterable {
+public abstract class BaseAdapter<T> extends android.widget.BaseAdapter implements Filterable {
 
 	protected BaseActivity activity;
 
@@ -30,8 +29,8 @@ public abstract class BaseAdapter<T> extends android.widget.BaseAdapter
 	 * 以应对在构造adapter后，达到某种条件时需要传值进来的情况<br/>
 	 */
 	@SuppressWarnings("hiding")
-	public <T> void transport(T... t) {
-
+	public <T> BaseAdapter<?> transport(T... t) {
+		return this;
 	}
 
 	public synchronized void notifyDataSetChanged() {
@@ -59,19 +58,16 @@ public abstract class BaseAdapter<T> extends android.widget.BaseAdapter
 	 */
 	protected View getItemView(View convertView, int item_resource) {
 		if (convertView == null) {
-			convertView = activity.getLayoutInflater().inflate(item_resource,
-					null);
+			convertView = activity.getLayoutInflater().inflate(item_resource, null);
 		}
 		return convertView;
 	}
 
-	
 	/**
 	 * 获取MVC模式控件的子布局
 	 */
 	protected View getItemViewUn(View convertView, int item_resource) {
-		convertView = activity.getLayoutInflater().inflate(item_resource,
-					null);
+		convertView = activity.getLayoutInflater().inflate(item_resource, null);
 		return convertView;
 	}
 
@@ -92,8 +88,6 @@ public abstract class BaseAdapter<T> extends android.widget.BaseAdapter
 		}
 		return (V) childView;
 	}
-	
-
 
 	public Filter getFilter() {
 		return null;
