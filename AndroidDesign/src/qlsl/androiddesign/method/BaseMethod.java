@@ -568,4 +568,29 @@ public class BaseMethod {
 		}
 		return "星期"+dst;
 	}
+
+        /**
+	 * 获取今天日期<br/>
+	 * 格式：yyyy年M月dd日<br/>
+	 */
+	@SuppressLint("SimpleDateFormat")
+	public static String getCurrentDay() {
+		Date date = new Date();
+		Calendar calendar = new GregorianCalendar();
+		calendar.setTime(date);
+		date = calendar.getTime();
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy年M月dd日");
+		String dateString = formatter.format(date);
+		return dateString;
+	}
+
+        /**
+	 * 获取今天星期几<br/>
+	 */
+	public static String getCurrentWeek() {
+		final Calendar c = Calendar.getInstance();
+		c.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
+		String week = String.valueOf(c.get(Calendar.DAY_OF_WEEK));
+		return toUpperCaseForWeek(week);
+	}
 }
