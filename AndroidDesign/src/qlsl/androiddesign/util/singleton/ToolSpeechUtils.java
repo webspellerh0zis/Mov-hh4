@@ -1,4 +1,4 @@
-package qlsl.androiddesign.util.singleton;
+﻿package qlsl.androiddesign.util.singleton;
 
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechError;
@@ -65,7 +65,7 @@ public class ToolSpeechUtils {
 	/**
 	 * 静态播放<br/>
 	 * 非语音设置中的播放<br/>
-	 * type:[0,1]对应[自动播放,点击播放]<br/>
+	 * type:[0,1,else]对应[自动播放,点击播放,强制播放]<br/>
 	 */
 	public static void startSpeaking(String text, int type) {
 		boolean isAutoPlay = true;
@@ -82,7 +82,9 @@ public class ToolSpeechUtils {
 			if (isClickPlay) {
 				getSpeechSynthesizer().startSpeaking(text, mSynListener);
 			}
-		}
+		}else{
+                   getSpeechSynthesizer().startSpeaking(text, mSynListener);
+                }
 	}
 
 	/**
