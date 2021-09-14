@@ -551,7 +551,9 @@ public class BaseMethod {
 
         public static String toUpperCaseForWeek(String src) {
 		String dst = null;
-		if (src.equals("1")) {
+		if (src.equals("0")) {
+			dst = "日";
+		} else if (src.equals("1")) {
 			dst = "一";
 		} else if (src.equals("2")) {
 			dst = "二";
@@ -566,7 +568,7 @@ public class BaseMethod {
 		} else if (src.equals("7")) {
 			dst = "日";
 		}
-		return "星期"+dst;
+		return "星期" + dst;
 	}
 
         /**
@@ -590,7 +592,7 @@ public class BaseMethod {
 	public static String getCurrentWeek() {
 		final Calendar c = Calendar.getInstance();
 		c.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
-		String week = String.valueOf(c.get(Calendar.DAY_OF_WEEK));
+		String week = String.valueOf(c.get(Calendar.DAY_OF_WEEK)-1);
 		return toUpperCaseForWeek(week);
 	}
 }
