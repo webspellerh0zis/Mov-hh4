@@ -144,6 +144,34 @@ public class ActivityManager {
 		}
 	}
 
+        /**
+	 * 移除到指定的activity(不包含指定)<br/>
+	 * 用于跨级返回并且传值，同application中的跨级传值，但不需要销毁<br/>
+         * 并携带旧传递数据(destPreviousClass至destClass)<br/>
+	 */
+	public void popToActivityWithData(Class<? extends Activity> destClass,
+			Bundle bundle) {
+		while (true) {
+			Activity currentActivity = currentActivity();
+			if (currentActivity == null) {
+				return;
+			}
+			currentActivity.finish();
+			if (currentActivity.getLocalClassName().equals(destClass.getName())) {
+				Intent intent = currentActivity.getIntent();
+				intent.putExtra("bundle", bundle);
+				Activity activity = currentActivity();
+				if (activity == null) {
+					return;
+				}
+				intent.setClass(activity, destClass);
+				activity.startActivity(intent);
+				return;
+			}
+		}
+	}
+
+
 	/**
 	 * 移除指定activity以下的所有窗口(不包含指定)<br/>
 	 * 用于清空不可逆窗口<br/>
