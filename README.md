@@ -96,7 +96,7 @@
 
 22.使用AndroidDesign框架开发的且听风吟App
 
-  官网下载地址   ： http://qlslylq.bmob.cn
+  官网下载地址   ： http://qlslylq.bmob.site
 
   应用宝下载地址 ： http://sj.qq.com/myapp/detail.htm?apkName=com.qlsl.androiddesign.freeapp
 
