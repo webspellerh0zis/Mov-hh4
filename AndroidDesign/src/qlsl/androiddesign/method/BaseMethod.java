@@ -15,6 +15,7 @@ import java.util.Date;
 import java.util.Enumeration;
 import java.util.GregorianCalendar;
 import java.util.Random;
+import java.util.TimeZone;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -549,7 +550,7 @@ public class BaseMethod {
 		return value;
 	}
 
-        public static String toUpperCaseForWeek(String src) {
+	public static String toUpperCaseForWeek(String src) {
 		String dst = null;
 		if (src.equals("0")) {
 			dst = "日";
@@ -571,7 +572,7 @@ public class BaseMethod {
 		return "星期" + dst;
 	}
 
-        /**
+	/**
 	 * 获取今天日期<br/>
 	 * 格式：yyyy年M月dd日<br/>
 	 */
@@ -586,13 +587,13 @@ public class BaseMethod {
 		return dateString;
 	}
 
-        /**
+	/**
 	 * 获取今天星期几<br/>
 	 */
 	public static String getCurrentWeek() {
 		final Calendar c = Calendar.getInstance();
 		c.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
-		String week = String.valueOf(c.get(Calendar.DAY_OF_WEEK)-1);
+		String week = String.valueOf(c.get(Calendar.DAY_OF_WEEK) - 1);
 		return toUpperCaseForWeek(week);
 	}
 }

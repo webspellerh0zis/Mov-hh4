@@ -1,4 +1,4 @@
-package qlsl.androiddesign.view.subview.commonview;
+﻿package qlsl.androiddesign.view.subview.commonview;
 
 import static qlsl.androiddesign.constant.BasicSettingConstant.showTabToast;
 import static qlsl.androiddesign.constant.BasicSettingConstant.showTitleTop;
@@ -184,6 +184,8 @@ public class PagerMainView extends FunctionView<MainActivity> {
 	 */
 	private void rotateTabIcon(int index) {
 		View tab_iv_icon = tabParent.getChildAt(index).findViewById(R.id.tab_iv_icon);
+                tab_iv_icon.requestFocus();
+		tab_iv_icon.requestFocusFromTouch();
 		Animation animation_tab = AnimationUtils.loadAnimation(activity, R.anim.tab_rotate);
 		animation_tab.reset();
 		animation_tab.setFillEnabled(true);

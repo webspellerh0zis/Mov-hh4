@@ -1,4 +1,4 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+﻿<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AppBaseTheme" parent="android:Theme.Light" />
 
@@ -15,6 +15,8 @@
         <item name="android:layout_height">35dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:paddingTop">3dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
     </style>
 
     <style name="tabwidget_text">
