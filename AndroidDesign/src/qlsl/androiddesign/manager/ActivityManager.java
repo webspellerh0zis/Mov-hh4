@@ -165,7 +165,7 @@ public class ActivityManager {
 					return;
 				}
 				intent.setClass(activity, destClass);
-				activity.startActivity(intent);
+				activity.startActivityForResult(intent,100);
 				return;
 			}
 		}
