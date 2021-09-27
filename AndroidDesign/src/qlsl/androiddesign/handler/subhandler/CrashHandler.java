@@ -87,6 +87,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 	 */
 	public void uncaughtException(Thread thread, Throwable ex) {
 		ActivityManager manager = ActivityManager.getInstance();
+mDeviceCrashInfo.put("ACTIVITY", manager.currentActivity().getClass().getName());
 		int sleep = 3000;
 		if (manager.getActivitySize() == 1) {
 			sleep = 2000;
