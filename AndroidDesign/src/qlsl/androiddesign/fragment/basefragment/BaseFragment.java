@@ -123,28 +123,58 @@ public abstract class BaseFragment extends Fragment implements HttpListener {
 		getFunctionView().onClick(view);
 	}
 
-	public void onDbSucceed(String arg0, Object arg1) {
-
+	public void onDbSucceed(String method, Object values) {
+		if (values != null) {
+			BaseActivity activity = (BaseActivity) getActivity();
+			if (activity != null) {
+				activity.showToast(values + "");
+			}
+		}
 	}
 
 	public void onDbFaild(String method, Object values) {
-		((BaseActivity) getActivity()).showNoDataToast(values.toString());
+		if (values != null) {
+			BaseActivity activity = (BaseActivity) getActivity();
+			if (activity != null) {
+				activity.showNoDataToast(values + "");
+			}
+		}
 	}
 
-	public void onNetWorkSucceed(String method, Object object) {
-
+	public void onNetWorkSucceed(String method, Object values) {
+		if (values != null) {
+			BaseActivity activity = (BaseActivity) getActivity();
+			if (activity != null) {
+				activity.showToast(values + "");
+			}
+		}
 	}
 
 	public void onNetWorkFaild(String method, Object values) {
-		((BaseActivity) getActivity()).showNoDataToast(values.toString());
+		if (values != null) {
+			BaseActivity activity = (BaseActivity) getActivity();
+			if (activity != null) {
+				activity.showNoDataToast(values + "");
+			}
+		}
 	}
 
 	public void onOtherSucceed(String method, Object values) {
-
+		if (values != null) {
+			BaseActivity activity = (BaseActivity) getActivity();
+			if (activity != null) {
+				activity.showToast(values + "");
+			}
+		}
 	}
 
 	public void onOtherFaild(String method, Object values) {
-		((BaseActivity) getActivity()).showNoDataToast(values.toString());
+		if (values != null) {
+			BaseActivity activity = (BaseActivity) getActivity();
+			if (activity != null) {
+				activity.showNoDataToast(values + "");
+			}
+		}
 	}
 
 	public void onException(String className, String method, Exception e) {
