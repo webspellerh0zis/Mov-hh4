@@ -1,4 +1,4 @@
-package qlsl.androiddesign.activity.baseactivity;
+﻿package qlsl.androiddesign.activity.baseactivity;
 
 import java.lang.reflect.Method;
 
@@ -143,10 +143,12 @@ public class BaseSherlockFragmentActivity extends SherlockFragmentActivity {
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		switch (keyCode) {
 		case KeyEvent.KEYCODE_BACK:
+if (event.getAction() == KeyEvent.ACTION_UP) {
 			if (!getLocalClassName().equals(MainActivity.class.getName())) {
 				ActivityManager.getInstance().popActivity();
 				return false;
 			}
+}
 			break;
 		}
 		return super.onKeyDown(keyCode, event);
