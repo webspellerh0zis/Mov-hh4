@@ -250,7 +250,7 @@ public class BaseService {
 		if (tv_empty == null) {
 			return;
 		}
-		tv_empty.setText(functionView.activity.getString(R.string.no_data));
+		
 		ViewGroup parentView = functionView.findViewById(R.id.emptyParentView);
 		View childView = parentView.getChildAt(0);
 		if (childView instanceof PullToRefreshAdapterViewBase) {
