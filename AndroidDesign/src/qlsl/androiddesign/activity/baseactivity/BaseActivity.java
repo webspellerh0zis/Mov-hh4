@@ -1,4 +1,4 @@
-package qlsl.androiddesign.activity.baseactivity;
+﻿package qlsl.androiddesign.activity.baseactivity;
 
 import java.io.File;
 
@@ -150,11 +150,16 @@ public abstract class BaseActivity extends BaseSherlockFragmentActivity
 	 * 使用SSO授权必须添加如下代码
 	 */
 	private void ssoCallback(int requestCode, int resultCode, Intent data) {
+try{
 		UMSsoHandler ssoHandler = SoftwareApplication.getInstance()
 				.getUMShareService().getConfig().getSsoHandler(requestCode);
 		if (ssoHandler != null) {
 			ssoHandler.authorizeCallBack(requestCode, resultCode, data);
 		}
+}catch(Excetion e){
+SoftwareApplication.getInstance().getUMShareService().getConfig()
+					.cleanListeners();
+}
 	}
 
 	@SuppressWarnings("unused")

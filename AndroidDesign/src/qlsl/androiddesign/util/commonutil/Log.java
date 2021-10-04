@@ -1,4 +1,4 @@
-package qlsl.androiddesign.util.commonutil;
+﻿package qlsl.androiddesign.util.commonutil;
 
 import java.io.File;
 
@@ -29,7 +29,7 @@ public class Log {
 	/**
 	 * true为调试模式，false为发布模式
 	 */
-	public static boolean isDebug = true;
+	public static boolean isDebug =  BuildConfig.DEBUG;
 
 	/**
 	 * true为输出手机模式，false为输出控制台模式<br/>
