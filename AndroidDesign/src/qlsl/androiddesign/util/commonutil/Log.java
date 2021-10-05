@@ -29,7 +29,7 @@ public class Log {
 	/**
 	 * true为调试模式，false为发布模式
 	 */
-	public static boolean isDebug =  BuildConfig.DEBUG;
+	public static boolean isDebug =  false;
 
 	/**
 	 * true为输出手机模式，false为输出控制台模式<br/>
