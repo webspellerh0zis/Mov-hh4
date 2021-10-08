@@ -156,7 +156,7 @@ try{
 		if (ssoHandler != null) {
 			ssoHandler.authorizeCallBack(requestCode, resultCode, data);
 		}
-}catch(Excetion e){
+}catch(Exception e){
 SoftwareApplication.getInstance().getUMShareService().getConfig()
 					.cleanListeners();
 }
