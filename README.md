@@ -1,3 +1,28 @@
+　　﻿作者：qlslylq (浅蓝深蓝叶落秋)
+
+　　联系：13297089301 QQ：2939143482
+
+　　QQ讨论群：326550832(AndroidDesign)
+
+　　名下开源框架：
+
+　　1.AndroidDesign(eclipse，in 2014)
+
+　　2.AndroidDesign(AndroidStudio，in 2016)
+
+　　3.UnityDesign(VisualStudio,C#，in 2017)
+
+　　4.FlutterDesign(计划中，in 2019)
+
+　　名下待开源项目：
+
+　　1.AndroidDesignQtfy(且听风吟app by eclipse;downloadApp：http://qlslylq.bmob.site)
+
+　　2.UnityDesignEasyAR (AR纹理识别demo)
+
+　　3.UnityDesignThreeInOne (三合一游戏demo)
+
+
 ﻿一.AndroidDesign框架特点：
 
 自动化高，层级分明；窗口职责化，查错效率高；各级结构标准化，混乱代码易优化；勿须重构智能化，各司其职模块化。
@@ -92,7 +117,7 @@
 
 21.觉得框架对自己有帮助的朋友，可以使用支付宝扫一扫下面的二维码以捐赠项目组
 
-  ![支持项目的朋友，请使用支付宝扫一扫以捐赠项目组](http://bmob-cdn-690.b0.upaiyun.com/2017/02/19/cf9e97e2409412c6805f761835fb06ef.png "捐赠二维码")
+  ![支持项目的朋友，请使用支付宝扫一扫以捐赠项目组](https://images.gitee.com/uploads/images/2019/0331/144159_cad622fb_452019.png "捐赠二维码")
 
 22.使用AndroidDesign框架开发的且听风吟App
 
