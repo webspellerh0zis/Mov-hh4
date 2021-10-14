@@ -127,4 +127,61 @@
 
   应用宝下载地址 ： http://sj.qq.com/myapp/detail.htm?apkName=com.qlsl.androiddesign.freeapp
 
+三.现放出手机查看即时请求接口数据的截图(使用本AndroidDesign框架支持的功能)，商店项目截图，及框架自带调试模块截图(相关框架更新可能未提交到本仓库，需要的朋友可以联系我私要；另外，框架调试模块(蜜蜂图标标志)未集成到AndroidStudio版的AndroidDesign中，有需要的朋友将相关代码复制过去即可)
+
+![日志(接口链接可点击查看其数据，由框架自动处理)](https://gitee.com/uploads/images/2019/0405/181028_b6f24567_452019.png "Screenshot_2019-04-05-17-35-41-717_com.qlsl.andro.png")
+
+![接口数据实时查看](https://gitee.com/uploads/images/2019/0405/181157_abb872a9_452019.png "Screenshot_2019-04-05-17-36-06-388_com.qlsl.andro.png")
+
+![接口数据实时查看](https://gitee.com/uploads/images/2019/0405/182617_70a08f0a_452019.png "Screenshot_2019-04-05-17-43-06-623_com.qlsl.andro.png")
+
+![调试模块(日志，内存，进程及控件实时调试)](https://gitee.com/uploads/images/2019/0405/181343_dc67b233_452019.png "Screenshot_2019-04-05-17-39-03-765_com.qlsl.andro.png")
+
+![内存调试](https://gitee.com/uploads/images/2019/0405/181750_e719a1c9_452019.png "Screenshot_2019-04-05-17-39-21-634_com.qlsl.andro.png")
+
+![进程调试](https://gitee.com/uploads/images/2019/0405/181810_87b3af55_452019.png "Screenshot_2019-04-05-17-39-58-698_com.qlsl.andro.png")
+
+![进程排序](https://gitee.com/uploads/images/2019/0405/181604_39679ea1_452019.png "Screenshot_2019-04-05-17-40-05-662_com.qlsl.andro.png")
+
+![控件调试](https://gitee.com/uploads/images/2019/0405/181659_8d9fc3f4_452019.png "Screenshot_2019-04-05-18-01-20-295_com.qlsl.andro.png")
+
+![控件调试](https://gitee.com/uploads/images/2019/0405/181844_b7022e19_452019.png "Screenshot_2019-04-05-18-01-44-093_com.qlsl.andro.png")
+
+![控件调试](https://gitee.com/uploads/images/2019/0405/181903_aad1d528_452019.png "Screenshot_2019-04-05-18-02-10-324_com.qlsl.andro.png")
+
+![控件调试](https://gitee.com/uploads/images/2019/0405/181921_fe5a66d6_452019.png "Screenshot_2019-04-05-18-02-16-300_com.qlsl.andro.png")
+
+![日志调试](https://gitee.com/uploads/images/2019/0405/182016_68769664_452019.png "Screenshot_2019-04-05-18-00-13-687_com.qlsl.andro.png")
+
+![日志调试](https://gitee.com/uploads/images/2019/0405/182039_d2672deb_452019.png "Screenshot_2019-04-05-17-59-39-319_com.qlsl.andro.png")
+
+![日志调试](https://gitee.com/uploads/images/2019/0405/182259_fc783cb1_452019.png "Screenshot_2019-04-05-17-58-47-716_com.qlsl.andro.png")
+
+![日志调试](https://gitee.com/uploads/images/2019/0405/182321_648eecb5_452019.png "Screenshot_2019-04-05-17-58-57-950_com.qlsl.andro.png")
+
+![日志调试](https://gitee.com/uploads/images/2019/0405/182358_e7447430_452019.png "Screenshot_2019-04-05-17-59-06-752_com.qlsl.andro.png")
+
+![日志调试](https://gitee.com/uploads/images/2019/0405/182425_0c99a54e_452019.png "Screenshot_2019-04-05-17-59-18-647_com.qlsl.andro.png")
+
+![关联项目-快挖(酷挖)](https://gitee.com/uploads/images/2019/0405/182706_d69ee07a_452019.png "Screenshot_2019-04-05-17-41-13-025_com.qlsl.andro.png")
+
+![关联项目-快挖(酷挖)](https://gitee.com/uploads/images/2019/0405/182815_7fa21e0b_452019.png "Screenshot_2019-04-05-17-41-32-798_com.qlsl.andro.png")
+
+![关联项目-快挖(酷挖)](https://gitee.com/uploads/images/2019/0405/182900_959ae19d_452019.png "Screenshot_2019-04-05-17-41-45-527_com.qlsl.andro.png")
+
+![关联项目-快挖(酷挖)](https://gitee.com/uploads/images/2019/0405/183049_49a4d517_452019.png "Screenshot_2019-04-05-17-41-49-832_com.qlsl.andro.png")
+
+![关联项目-快挖(酷挖)](https://gitee.com/uploads/images/2019/0405/183127_bea339e1_452019.png "Screenshot_2019-04-05-17-41-56-314_com.qlsl.andro.png")
+
+![关联项目-且听风吟(已开源)](https://gitee.com/uploads/images/2019/0405/183311_153dd04b_452019.png "1.png")
+
+![关联项目-且听风吟(已开源)](https://gitee.com/uploads/images/2019/0405/183407_46118872_452019.png "2.png")
+
+![关联项目-且听风吟(已开源)](https://gitee.com/uploads/images/2019/0405/183421_1b031902_452019.png "3.png")
+
+![关联项目-且听风吟(已开源)](https://images.gitee.com/uploads/images/2019/0331/152951_ba720917_452019.png "4.png")
+
+![关联项目-且听风吟(已开源)](https://images.gitee.com/uploads/images/2019/0331/153004_84ddb690_452019.png "5.png")
+
+![关联项目-且听风吟(已开源)](https://images.gitee.com/uploads/images/2019/0331/153016_0e1e2d01_452019.png "6.png")
   
