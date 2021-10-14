@@ -1,4 +1,4 @@
-　　﻿作者：qlslylq (浅蓝深蓝叶落秋)
+　　﻿作者：qlslylq (浅蓝深蓝叶落秋，https://www.bmob.cn/shop/detail/396)
 
 　　联系：13297089301 QQ：2939143482
 
@@ -18,7 +18,7 @@
 
 　　名下待开源项目：
 
-　　1.AndroidDesignQtfy(且听风吟app by eclipse;downloadApp：http://qlslylq.bmob.site)
+　　1.AndroidDesignQtfy (https://www.bmob.cn/shop/detail/396)
 
 　　2.UnityDesignEasyAR (AR纹理识别demo)
 
