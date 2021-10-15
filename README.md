@@ -14,7 +14,9 @@
 
 　　4.UnityDesign(VisualStudio,C#，in 2017)
 
-　　5.FlutterDesign(计划中，in 2019)
+　　5.FlutterDesign(AndroidStudio，in 2019)
+
+　　6.JavaDesign(Intellij IDEA，in 2020)
 
 　　名下待开源项目：
 
