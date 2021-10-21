@@ -16,7 +16,7 @@
 
 　　5.FlutterDesign(AndroidStudio，in 2019)
 
-　　6.JavaDesign(Intellij IDEA，in 2020)：[输入链接说明](https://gitee.com/qlslylq/JavaDesign)
+　　6.JavaDesign(Intellij IDEA，in 2020)：[查看项目](https://gitee.com/qlslylq/JavaDesign)
 
 　　名下待开源项目：
 
