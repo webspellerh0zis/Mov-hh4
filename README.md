@@ -26,6 +26,12 @@
 
 　　3.UnityDesignThreeInOne (三合一游戏demo)
 
+　　友情推广：
+
+　　华为云：[华为云](https://account.huaweicloud.com/obmgr/invitation/invitation.html?bpName=0000000100000002ABF750871AEB87720ACC40C42A118E856B76DBBE60DBB4ED2ECFD88225E0C039F3BBD11759B3040456E0549FE8AE1850DE1FFF37FEB043717008C92DE61831DD&inviteCode=00000001000000021FF7919C82835DD65B03AF77AA85B03EC3EC9E3489913E124D96066CF783EC39&bindType=1&isDefault=1)
+
+![华为云](https://images.gitee.com/uploads/images/2020/0928/130311_9b131343_452019.gif "huaweicloud.gif")
+
 
 ﻿一.AndroidDesign框架特点：
 
